@@ -28,7 +28,7 @@ export default async function ContactPage() {
             Begin Your Journey
           </p>
           <h1 className="font-headline text-5xl md:text-7xl lg:text-8xl text-white italic max-w-4xl leading-tight">
-            Let's Start Your Story
+            Let&apos;s Start Your Story
           </h1>
         </div>
       </section>

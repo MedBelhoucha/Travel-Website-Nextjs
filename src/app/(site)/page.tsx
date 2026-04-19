@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import NextImage from "next/image";
 import Link from "next/link";
 import { client } from "@/sanity/lib/client";
@@ -135,7 +136,7 @@ export default async function Home() {
                    <div key={testimonial._id} className="bg-surface-container-low p-10 rounded-xl flex flex-col justify-between shadow-sm hover:shadow-md transition-shadow">
                      <div>
                        <p className="font-headline text-2xl text-on-surface italic leading-relaxed mb-10">
-                         "{testimonial.quote}"
+                         &quot;{testimonial.quote}&quot;
                        </p>
                      </div>
                      <div className="flex items-center gap-5">

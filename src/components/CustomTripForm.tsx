@@ -25,7 +25,7 @@ export default function CustomTripForm({
     setStatus(result)
     
     if (result.success) {
-      // @ts-ignore
+      // @ts-expect-error
       document.getElementById('custom-trip-form')?.reset()
     }
   }

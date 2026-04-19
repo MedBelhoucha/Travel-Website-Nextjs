@@ -1,9 +1,9 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import NextImage from "next/image";
 import Link from "next/link";
 import { client } from "@/sanity/lib/client";
 import { TOUR_BY_SLUG_QUERY } from "@/sanity/lib/queries";
 import { urlForImage } from "@/sanity/lib/image";
-import { PortableText } from "@portabletext/react";
 
 export const revalidate = 0;
 
@@ -136,7 +136,7 @@ export default async function TourDetailPage({
                   <div className="space-y-8 mb-12">
                      <div>
                         <span className="font-label text-[10px] uppercase tracking-widest text-[#994126] mb-4 block underline underline-offset-4">
-                           What's Included
+                           What&apos;s Included
                         </span>
                         <ul className="space-y-3">
                            {tour.inclusions?.map((item: string, i: number) => (

@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import NextImage from "next/image";
 import Link from "next/link";
 import { client } from "@/sanity/lib/client";

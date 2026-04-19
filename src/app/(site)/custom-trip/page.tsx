@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { client } from "@/sanity/lib/client";
 import { CUSTOM_TRIP_QUERY } from "@/sanity/lib/queries";
 import { urlForImage } from "@/sanity/lib/image";

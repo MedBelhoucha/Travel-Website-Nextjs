@@ -17,7 +17,7 @@ export default function ContactForm() {
     setStatus(result)
     
     if (result.success) {
-      // @ts-ignore
+      // @ts-expect-error
       document.getElementById('contact-form')?.reset()
     }
   }

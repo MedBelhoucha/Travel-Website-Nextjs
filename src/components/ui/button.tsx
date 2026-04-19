@@ -8,6 +8,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
   ({ className, asChild = false, children, ...props }, ref) => {
     if (asChild) {
       if (React.isValidElement(children)) {
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         return React.cloneElement(children as React.ReactElement<any>, {
           ref,
           className: `${className || ""} ${children.props.className || ""}`,

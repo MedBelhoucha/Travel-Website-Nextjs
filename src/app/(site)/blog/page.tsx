@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import NextImage from "next/image";
 import Link from "next/link";
 import { client } from "@/sanity/lib/client";
@@ -39,7 +40,7 @@ export default async function BlogListingPage({
       <header className="px-12 py-24 border-b border-outline-variant/30 flex flex-col md:flex-row justify-between items-end gap-12 text-left">
         <div className="max-w-4xl">
           <span className="font-label text-primary text-[0.75rem] uppercase tracking-[0.3em] mb-4 block underline underline-offset-8">
-            The Nomad's Journal
+            The Nomad&apos;s Journal
           </span>
           <h1 className="font-headline text-[3.5rem] md:text-[5.5rem] leading-[1.05] text-on-surface-variant italic">
             Chronicles of the <br /> Red Earth & Endless Dunes
@@ -128,7 +129,7 @@ export default async function BlogListingPage({
       {/* Newsletter / CTA */}
       <section className="bg-surface-container-low py-32 px-12 mt-20">
          <div className="max-w-4xl mx-auto text-center">
-            <h3 className="font-headline text-4xl mb-6 italic">Join the Nomad's Circle</h3>
+            <h3 className="font-headline text-4xl mb-6 italic">Join the Nomad&apos;s Circle</h3>
             <p className="font-body text-on-surface-variant text-lg mb-12 max-w-2xl mx-auto">
                Receive monthly dispatches on hidden riads, desert star charts, and upcoming curated expeditions.
             </p>

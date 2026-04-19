@@ -17,7 +17,7 @@ export default function NewsletterForm() {
     setStatus(result)
     
     if (result.success) {
-      // @ts-ignore
+      // @ts-expect-error
       document.getElementById('newsletter-form')?.reset()
     }
   }

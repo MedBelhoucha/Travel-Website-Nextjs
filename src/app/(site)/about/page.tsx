@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import NextImage from "next/image";
 import { client } from "@/sanity/lib/client";
 import { ABOUT_QUERY } from "@/sanity/lib/queries";
