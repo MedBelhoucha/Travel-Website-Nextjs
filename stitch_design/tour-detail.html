@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Manrope:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary-container": "#7b745e",
+                    "on-surface-variant": "#56423d",
+                    "surface": "#fbf9f8",
+                    "on-tertiary-container": "#fffbff",
+                    "secondary-container": "#cfe99f",
+                    "on-secondary-fixed": "#131f00",
+                    "surface-variant": "#e4e2e1",
+                    "inverse-primary": "#ffb5a0",
+                    "background": "#fbf9f8",
+                    "on-background": "#1b1c1c",
+                    "surface-dim": "#dcd9d9",
+                    "surface-container-low": "#f6f3f2",
+                    "outline": "#89726c",
+                    "on-secondary-container": "#546a2e",
+                    "secondary": "#50652a",
+                    "on-primary-fixed-variant": "#7d2c13",
+                    "on-error-container": "#93000a",
+                    "error-container": "#ffdad6",
+                    "secondary-fixed": "#d2eca2",
+                    "primary-fixed-dim": "#ffb5a0",
+                    "on-error": "#ffffff",
+                    "surface-tint": "#9c4328",
+                    "on-primary": "#ffffff",
+                    "surface-container-high": "#eae8e7",
+                    "on-tertiary-fixed-variant": "#4c4733",
+                    "tertiary": "#615c47",
+                    "primary-fixed": "#ffdbd1",
+                    "on-tertiary-fixed": "#1f1c0b",
+                    "primary": "#994126",
+                    "tertiary-fixed-dim": "#cec6ad",
+                    "surface-bright": "#fbf9f8",
+                    "primary-container": "#b8583c",
+                    "error": "#ba1a1a",
+                    "on-surface": "#1b1c1c",
+                    "secondary-fixed-dim": "#b6d088",
+                    "on-primary-container": "#fffbff",
+                    "surface-container-highest": "#e4e2e1",
+                    "tertiary-fixed": "#ebe2c8",
+                    "surface-container": "#f0eded",
+                    "on-primary-fixed": "#3b0a00",
+                    "inverse-on-surface": "#f3f0f0",
+                    "on-tertiary": "#ffffff",
+                    "outline-variant": "#dcc1b9",
+                    "surface-container-lowest": "#ffffff",
+                    "on-secondary": "#ffffff",
+                    "inverse-surface": "#303030",
+                    "on-secondary-fixed-variant": "#394d14"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Noto Serif"],
+                    "body": ["Manrope"],
+                    "label": ["Manrope"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .editorial-shadow {
+            box-shadow: 0 20px 40px rgba(86, 66, 61, 0.06);
+        }
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/80 dark:bg-stone-900/80 backdrop-blur-md">
+<div class="flex justify-between items-center px-12 py-6 max-w-screen-2xl mx-auto">
+<a class="text-2xl font-serif text-orange-900 dark:text-orange-100 italic" href="#">Sahara Mirage</a>
+<div class="hidden md:flex items-center space-x-12">
+<a class="font-label text-[0.75rem] tracking-wider uppercase text-orange-900 dark:text-orange-100 border-b-2 border-orange-800/30 pb-1 hover:text-orange-700 transition-colors duration-300" href="#">Tours</a>
+<a class="font-label text-[0.75rem] tracking-wider uppercase text-stone-600 dark:text-stone-400 hover:text-orange-700 transition-colors duration-300" href="#">Destinations</a>
+<a class="font-label text-[0.75rem] tracking-wider uppercase text-stone-600 dark:text-stone-400 hover:text-orange-700 transition-colors duration-300" href="#">Custom Trip</a>
+<a class="font-label text-[0.75rem] tracking-wider uppercase text-stone-600 dark:text-stone-400 hover:text-orange-700 transition-colors duration-300" href="#">About</a>
+<a class="font-label text-[0.75rem] tracking-wider uppercase text-stone-600 dark:text-stone-400 hover:text-orange-700 transition-colors duration-300" href="#">Blog</a>
+</div>
+<button class="bg-primary text-on-primary px-8 py-3 rounded-xl font-label text-[0.75rem] uppercase tracking-widest hover:bg-primary-container transition-all duration-300">
+                Contact Us
+            </button>
+</div>
+</nav>
+<main class="pt-24">
+<!-- Hero Section -->
+<section class="relative h-[921px] w-full overflow-hidden flex items-end px-12 pb-24">
+<img alt="Atlas Peaks" class="absolute inset-0 w-full h-full object-cover" data-alt="dramatic wide angle view of the rugged atlas mountains in morocco at sunset with golden light hitting the peaks and deep orange shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBfI_lZhxP2zG7l2D_4E75f02byYj8vhyeckY9r4uNluQLn2WKYAglkfOUM6oRab3ckbQTsAXzntYB-DSizC4EvCsOnQS8ATDs-KahXD7bizWH4p75XizBJiBAEw0pAhGi5ttSLCheaYiMNPXu0C0UhvW-l0nK0iNZAOUyAEje6fTfxlAXlpOahs9psx4tT_7JcacpgsNnXRlCDKhoZNfElQpvcRF6HPmjmkLp18zdzEslXljx_Q500ZyZ2Ak-pIt644rjODIFmKG4"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/60 to-transparent"></div>
+<div class="relative z-10 max-w-4xl">
+<span class="font-label text-[0.75rem] uppercase tracking-[0.2em] text-surface-container-low mb-4 block">Expedition Series 01</span>
+<h1 class="font-headline text-[3.5rem] md:text-[5rem] leading-[1.1] text-white italic mb-8">Echoes of the Atlas Peaks</h1>
+<div class="flex flex-wrap gap-8">
+<div class="flex items-center gap-3 text-white">
+<span class="material-symbols-outlined text-surface-container-high">schedule</span>
+<div class="flex flex-col">
+<span class="font-label text-[0.6rem] uppercase tracking-tighter opacity-70">Duration</span>
+<span class="font-body text-lg">8 Days, 7 Nights</span>
+</div>
+</div>
+<div class="flex items-center gap-3 text-white">
+<span class="material-symbols-outlined text-surface-container-high">groups</span>
+<div class="flex flex-col">
+<span class="font-label text-[0.6rem] uppercase tracking-tighter opacity-70">Group Size</span>
+<span class="font-body text-lg">Max 6 Nomads</span>
+</div>
+</div>
+<div class="flex items-center gap-3 text-white">
+<span class="material-symbols-outlined text-surface-container-high">favorite</span>
+<div class="flex flex-col">
+<span class="font-label text-[0.6rem] uppercase tracking-tighter opacity-70">Intimacy Level</span>
+<span class="font-body text-lg">Curated Seclusion</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Intro Content -->
+<section class="py-32 px-12 max-w-screen-xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-16 items-start">
+<div class="md:col-span-5">
+<h2 class="font-headline text-[1.75rem] text-primary mb-8 leading-snug">A journey beyond the visible horizons of Marrakech.</h2>
+<p class="font-body text-[1.125rem] text-on-surface-variant leading-relaxed mb-6">
+                        Ascend into the high-altitude sanctuary of the Berbers. This is not merely a tour; it is an editorial exploration of heritage, silence, and the raw texture of the earth. We move slowly, allowing the mountain light to dictate our pace.
+                    </p>
+</div>
+<div class="md:col-span-7 relative">
+<div class="bg-surface-container-low p-12 editorial-shadow rounded-xl">
+<p class="font-headline italic text-xl text-on-surface-variant leading-relaxed">
+                            "The Atlas does not reveal its secrets to those in a hurry. You must wait for the fog to lift and the mint tea to steep."
+                        </p>
+<div class="mt-8 flex items-center gap-4">
+<div class="h-[1px] w-12 bg-outline-variant"></div>
+<span class="font-label text-[0.75rem] uppercase tracking-widest text-on-surface-variant">Malika, Master Weaver</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- The Journey (Day by Day) -->
+<section class="bg-surface-container-low py-32">
+<div class="px-12 max-w-screen-2xl mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-24 gap-8">
+<div class="max-w-2xl">
+<span class="font-label text-[0.75rem] uppercase tracking-widest text-primary mb-4 block">The Itinerary</span>
+<h2 class="font-headline text-[2.5rem] leading-none">Mapping the High Passages</h2>
+</div>
+</div>
+<div class="space-y-48">
+<!-- Day 01 -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+<div class="md:col-span-7 order-2 md:order-1">
+<div class="aspect-[16/9] overflow-hidden rounded-xl">
+<img alt="Day 1" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700 ease-in-out" data-alt="luxury boutique hotel courtyard in marrakech with symmetrical arches and traditional zellige tilework in soft daylight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIxgLbCKBGYJCCF1bLdmt6gAvDc_-UblMuNJQYsWZn-sURBbE2RZAMOmv_7iJtM5PISy9lPjKnlkcH7zovzAWDh4ExLEq32UBSeWLVY4Tj9BAqJTmerSxflIxaycbO1fMpttjckbIkZ8InBSabgiPev3suwfKSnpPXWYPV7VxrQ3E1_Vx_oHEE3HKT-kcJelvPsehy9Lj-KVgAGT8T_2C5o2WJnp_ObnLtaP1_fCMakpg2wPUGuHsp66c21PMNsyJPyRncc5pJwic"/>
+</div>
+</div>
+<div class="md:col-span-5 order-1 md:order-2 md:pl-12">
+<span class="font-label text-[0.75rem] text-primary font-bold">01 — ARRIVAL</span>
+<h3 class="font-headline text-3xl mt-4 mb-6 italic">The Red City Prelude</h3>
+<p class="font-body text-on-surface-variant leading-relaxed mb-8">
+                                Gather at our private riad in Marrakech. As the sun dips below the Koutoubia, enjoy a curated welcome dinner where the spices of the Maghreb introduce the week ahead.
+                            </p>
+<ul class="space-y-3">
+<li class="flex items-center gap-3 font-label text-[0.75rem] uppercase tracking-wide text-on-surface">
+<span class="material-symbols-outlined text-primary text-sm">check</span> Private Airport Transfer
+                                </li>
+<li class="flex items-center gap-3 font-label text-[0.75rem] uppercase tracking-wide text-on-surface">
+<span class="material-symbols-outlined text-primary text-sm">check</span> Sunset Libations
+                                </li>
+</ul>
+</div>
+</div>
+<!-- Day 02-03 -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+<div class="md:col-span-5 md:pr-12">
+<span class="font-label text-[0.75rem] text-primary font-bold">02 &amp; 03 — THE ASCENT</span>
+<h3 class="font-headline text-3xl mt-4 mb-6 italic">Into the Stone Heart</h3>
+<p class="font-body text-on-surface-variant leading-relaxed mb-8">
+                                Leave the heat of the plains behind. We traverse the Tizi n'Tichka pass, stopping at ancient Kasbahs that crumble with dignity. Night falls at a sustainable eco-lodge nestled in a terraced valley.
+                            </p>
+<ul class="space-y-3">
+<li class="flex items-center gap-3 font-label text-[0.75rem] uppercase tracking-wide text-on-surface">
+<span class="material-symbols-outlined text-primary text-sm">check</span> Heritage Kasbah Access
+                                </li>
+<li class="flex items-center gap-3 font-label text-[0.75rem] uppercase tracking-wide text-on-surface">
+<span class="material-symbols-outlined text-primary text-sm">check</span> Stargazing Session
+                                </li>
+</ul>
+</div>
+<div class="md:col-span-7">
+<div class="aspect-[4/5] md:aspect-[16/9] overflow-hidden rounded-xl relative">
+<img alt="Day 2" class="w-full h-full object-cover" data-alt="winding mountain road through the atlas mountains with steep earthy red cliffs and high altitude sparse vegetation" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCe6dKnLHh83s772SeEMl0Hp2xu59FHx3yHj5VN9QPuMUq3kDunjE0Pc0UVaLnISUm4J35dAQigD2K81tJezHmhK6huGGHq5WxTSO0cJZG5yYn_Zntxyb4JO68zs2Q8SPdmNC8m6TSe_AsE2XMHLbTQg9E9J6mse_lM-_OxVICrD-8gvHjalZPK9KJsXrUrTsmitlwuwRf0o8T_VkctDkAA159K-hdUmfbtVV7amxFiYK7pB3wjT2SNYL-cR8gsuNJE_PpsQ-hSeEc"/>
+<div class="absolute bottom-8 right-8 bg-surface p-6 rounded-xl editorial-shadow max-w-xs hidden md:block">
+<span class="font-label text-[0.65rem] uppercase tracking-widest text-primary block mb-2">Elevation</span>
+<p class="font-body text-sm italic">"The air thins, and the noise of the world simply dissolves into the wind."</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Day 04-06 -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+<div class="md:col-span-7 order-2 md:order-1">
+<div class="aspect-[16/9] overflow-hidden rounded-xl">
+<img alt="Day 4" class="w-full h-full object-cover" data-alt="berber woman in colorful traditional clothing weaving a wool rug in a sunlit rustic stone room" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJ2RfeKigpjwbOZFR2kBU2aX3YA2qj_rD0FgvjSzyskhAUxPsV9TNvP5uraDEYY9PzWnma0FU6IESNYYkZpJnS4CLOtXrcJOWEFiwXUxh8sJ69odY0wBa2eFK1Cjdb9AOto5xWDX6_qpDiu8_yHkw6mXIllaU1yad1hQhNR0jg52yS3qLqMvj2eZRNL6JsmbXh343EwVfezX_-gt8yRvU73V3hAzZefBXKyaQjyfBH2v2uuMK_gAcooiU4hwauxkJ2sad_I0Qt_jg"/>
+</div>
+</div>
+<div class="md:col-span-5 order-1 md:order-2 md:pl-12">
+<span class="font-label text-[0.75rem] text-primary font-bold">04 TO 06 — IMMERSION</span>
+<h3 class="font-headline text-3xl mt-4 mb-6 italic">The Weaver's Silence</h3>
+<p class="font-body text-on-surface-variant leading-relaxed mb-8">
+                                Three days of immersive living. Learn the geometry of Berber weaving, help prepare communal bread in clay ovens, and hike to hidden waterfalls known only to the shepherds.
+                            </p>
+<ul class="space-y-3">
+<li class="flex items-center gap-3 font-label text-[0.75rem] uppercase tracking-wide text-on-surface">
+<span class="material-symbols-outlined text-primary text-sm">check</span> Craft Workshops
+                                </li>
+<li class="flex items-center gap-3 font-label text-[0.75rem] uppercase tracking-wide text-on-surface">
+<span class="material-symbols-outlined text-primary text-sm">check</span> Village Engagement
+                                </li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Inclusions/Exclusions -->
+<section class="py-32 px-12 max-w-screen-xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-24">
+<div>
+<h4 class="font-headline text-2xl mb-12 border-b border-outline-variant pb-6">What is Curated</h4>
+<ul class="space-y-8">
+<li class="flex gap-6">
+<span class="material-symbols-outlined text-primary">local_hotel</span>
+<div>
+<span class="font-label text-[0.75rem] uppercase tracking-widest block mb-1">Accommodations</span>
+<p class="font-body text-on-surface-variant text-sm">Luxury Riads and premier mountain lodges hand-selected for authenticity.</p>
+</div>
+</li>
+<li class="flex gap-6">
+<span class="material-symbols-outlined text-primary">restaurant</span>
+<div>
+<span class="font-label text-[0.75rem] uppercase tracking-widest block mb-1">Full Board</span>
+<p class="font-body text-on-surface-variant text-sm">Chef-prepared traditional Moroccan cuisine, including all beverages.</p>
+</div>
+</li>
+<li class="flex gap-6">
+<span class="material-symbols-outlined text-primary">directions_car</span>
+<div>
+<span class="font-label text-[0.75rem] uppercase tracking-widest block mb-1">Transport</span>
+<p class="font-body text-on-surface-variant text-sm">Premium 4x4 vehicles with private expert drivers at your disposal.</p>
+</div>
+</li>
+</ul>
+</div>
+<div>
+<h4 class="font-headline text-2xl mb-12 border-b border-outline-variant pb-6">For Your Account</h4>
+<ul class="space-y-8">
+<li class="flex gap-6">
+<span class="material-symbols-outlined text-outline">flight_takeoff</span>
+<div>
+<span class="font-label text-[0.75rem] uppercase tracking-widest block mb-1">International Air</span>
+<p class="font-body text-on-surface-variant text-sm">Flights to and from Marrakech are not included in the expedition fee.</p>
+</div>
+</li>
+<li class="flex gap-6">
+<span class="material-symbols-outlined text-outline">verified_user</span>
+<div>
+<span class="font-label text-[0.75rem] uppercase tracking-widest block mb-1">Travel Insurance</span>
+<p class="font-body text-on-surface-variant text-sm">Mandatory comprehensive travel and medical insurance is required.</p>
+</div>
+</li>
+<li class="flex gap-6">
+<span class="material-symbols-outlined text-outline">shopping_bag</span>
+<div>
+<span class="font-label text-[0.75rem] uppercase tracking-widest block mb-1">Personal Curios</span>
+<p class="font-body text-on-surface-variant text-sm">Souvenirs, artisanal rugs, and personal shopping expenses.</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</section>
+<!-- Inquiry Form -->
+<section class="py-32 px-12 bg-surface-container-highest">
+<div class="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-16">
+<div class="md:col-span-5">
+<span class="font-label text-[0.75rem] uppercase tracking-[0.2em] text-primary mb-4 block">Reservation</span>
+<h2 class="font-headline text-[3rem] leading-none mb-8">Begin Your Journey</h2>
+<p class="font-body text-on-surface-variant leading-relaxed mb-12">
+                        Each journey is meticulously vetted for timing and weather. Inquire today to receive the full dossier and available dates for the upcoming season.
+                    </p>
+<a class="inline-flex items-center gap-4 bg-[#25D366] text-white px-8 py-4 rounded-xl font-label text-[0.75rem] uppercase tracking-widest hover:brightness-110 transition-all" href="#">
+<span class="material-symbols-outlined">chat</span>
+                        WhatsApp Concierge
+                    </a>
+</div>
+<div class="md:col-span-7 bg-surface p-12 rounded-xl editorial-shadow">
+<form class="space-y-10">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+<div class="relative">
+<label class="font-label text-[0.65rem] uppercase tracking-widest text-on-surface-variant absolute -top-5 left-0">Your Full Name</label>
+<input class="w-full bg-transparent border-0 border-b border-outline-variant py-3 focus:ring-0 focus:border-primary transition-colors font-body" placeholder="Julianne Moore" type="text"/>
+</div>
+<div class="relative">
+<label class="font-label text-[0.65rem] uppercase tracking-widest text-on-surface-variant absolute -top-5 left-0">Email Address</label>
+<input class="w-full bg-transparent border-0 border-b border-outline-variant py-3 focus:ring-0 focus:border-primary transition-colors font-body" placeholder="julianne@nomad.com" type="email"/>
+</div>
+</div>
+<div class="relative">
+<label class="font-label text-[0.65rem] uppercase tracking-widest text-on-surface-variant absolute -top-5 left-0">Preferred Travel Month</label>
+<select class="w-full bg-transparent border-0 border-b border-outline-variant py-3 focus:ring-0 focus:border-primary transition-colors font-body appearance-none">
+<option>September 2024</option>
+<option>October 2024</option>
+<option>April 2025</option>
+<option>May 2025</option>
+</select>
+</div>
+<div class="relative">
+<label class="font-label text-[0.65rem] uppercase tracking-widest text-on-surface-variant absolute -top-5 left-0">Message for the Curators</label>
+<textarea class="w-full bg-transparent border-0 border-b border-outline-variant py-3 focus:ring-0 focus:border-primary transition-colors font-body resize-none" placeholder="Share your vision for this trip..." rows="3"></textarea>
+</div>
+<button class="w-full bg-primary text-on-primary py-5 rounded-xl font-label text-[0.75rem] uppercase tracking-[0.2em] hover:bg-primary-container transition-all">
+                            Submit Inquiry
+                        </button>
+</form>
+</div>
+</div>
+</section>
+<!-- Related Experiences -->
+<section class="py-32 px-12 max-w-screen-2xl mx-auto">
+<h3 class="font-headline text-[2rem] mb-16 italic text-center">Other Curated Horizons</h3>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<!-- Related 1 -->
+<div class="group cursor-pointer">
+<div class="aspect-[4/5] overflow-hidden rounded-xl mb-6">
+<img alt="Sahara" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" data-alt="sand dunes of the sahara desert at dusk with soft purple and orange light and smooth wind-rippled textures" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAyMrdFzkcCFqlKgP_JZFrMp63lBO6yIB8xFojqKGYgM5LGNlcrMUG7l0NkDHhP7LBDMUWSa13EY71dM5G-mSSv-TdmKtScIvOAlf70K4XEE9FF5pYTdo1whRTZZNiRhnqpa1qfwNgJW3mVL7kviLoOIN5cEbeR09R3VQBBV-Gw3hYrKxnwgapd_aUJk5vyEspTdVtI622xVOWLiBnnzQ_ILlqiRLatPmkJ2brxsvMnfO5rAMthrkH_hwAXD1kVS61k0LEa-ZKjMxc"/>
+</div>
+<span class="font-label text-[0.65rem] uppercase tracking-[0.2em] text-primary mb-2 block">Dunes of Erg Chebbi</span>
+<h4 class="font-headline text-xl">The Golden Silence</h4>
+</div>
+<!-- Related 2 -->
+<div class="group cursor-pointer">
+<div class="aspect-[4/5] overflow-hidden rounded-xl mb-6">
+<img alt="Coast" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" data-alt="the blue and white city of chefchaouen seen through a narrow stone archway at midday" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD5PBwaEOvktGqHZHgvqfXeVxrTEsU7UMS38XkjlaE_npUaBLxI91zCdo_LzemAcEAuUW-JbieotsU1gwMtSfWVecmbZixZFmHcYomaEbyHf1t9od1Koy5GdxEkPyWV36wM32tAR5N7xnkhverenhSJSiYtTr66lA8NdhOJS4LsdCCyRp6hwAklUBgFRgPFbBJe-LtVpU3vcKgiJXO2YOhycPdub_UL25OllTwKpPclfn-iR0S3eFkHNKfvvInBWYX-5HjNILaEiA4"/>
+</div>
+<span class="font-label text-[0.65rem] uppercase tracking-[0.2em] text-primary mb-2 block">Chefchaouen</span>
+<h4 class="font-headline text-xl">The Azure Labyrinth</h4>
+</div>
+<!-- Related 3 -->
+<div class="group cursor-pointer">
+<div class="aspect-[4/5] overflow-hidden rounded-xl mb-6">
+<img alt="Fez" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" data-alt="traditional tanneries in fez with circular vats of colorful dye in the late afternoon sun" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDAHo0M09iM6DsCVU88kvEsGWunvLzH9BwzTqHueGPrySU5zFoAQODgS1KaW7XrG2Eqx9Gh5BI9Jhq14u1oCswFsslhpr-ZO0W9M9hHaUk2bNDauXzBkU1n2rvh9o7GHsthyNPycCjIYB9WEA8GCErQrwvcctvnFfPATVugCmhAFvs0oxcKA2O95DnyCp48s4xyovccQQmv8blVWDTf4GuSzP_UGMM0NCDo9SHLw6yYmOrZqE0wY2smuEfzmpgsRWM_Dc3Pdpn6c6s"/>
+</div>
+<span class="font-label text-[0.65rem] uppercase tracking-[0.2em] text-primary mb-2 block">Fez Medina</span>
+<h4 class="font-headline text-xl">Heart of the Alchemists</h4>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-stone-100 dark:bg-stone-950 w-full mt-24">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-12 py-20 max-w-screen-2xl mx-auto">
+<div class="md:col-span-1">
+<a class="text-3xl font-serif text-orange-900 dark:text-orange-100" href="#">Sahara Mirage</a>
+<p class="font-body text-stone-500 dark:text-stone-400 mt-6 leading-relaxed">
+                    © 2024 Sahara Mirage. Curated Journeys for the Modern Nomad.
+                </p>
+</div>
+<div class="space-y-4">
+<span class="font-label text-[0.75rem] uppercase tracking-widest text-orange-900 dark:text-orange-200">Legal</span>
+<ul class="space-y-2">
+<li><a class="font-body text-stone-500 hover:translate-x-1 transition-transform duration-200 block" href="#">Privacy Policy</a></li>
+<li><a class="font-body text-stone-500 hover:translate-x-1 transition-transform duration-200 block" href="#">Terms of Service</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<span class="font-label text-[0.75rem] uppercase tracking-widest text-orange-900 dark:text-orange-200">Resources</span>
+<ul class="space-y-2">
+<li><a class="font-body text-stone-500 hover:translate-x-1 transition-transform duration-200 block" href="#">Travel Insurance</a></li>
+<li><a class="font-body text-stone-500 hover:translate-x-1 transition-transform duration-200 block" href="#">Sustainability Pledge</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<span class="font-label text-[0.75rem] uppercase tracking-widest text-orange-900 dark:text-orange-200">Connect</span>
+<div class="flex gap-4">
+<a class="text-orange-800 dark:text-orange-300 transition-all hover:scale-110" href="#">Instagram</a>
+<a class="text-orange-800 dark:text-orange-300 transition-all hover:scale-110" href="#">Journal</a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

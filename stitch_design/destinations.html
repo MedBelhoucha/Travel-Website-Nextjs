@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Manrope:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary-container": "#7b745e",
+                    "on-surface-variant": "#56423d",
+                    "surface": "#fbf9f8",
+                    "on-tertiary-container": "#fffbff",
+                    "secondary-container": "#cfe99f",
+                    "on-secondary-fixed": "#131f00",
+                    "surface-variant": "#e4e2e1",
+                    "inverse-primary": "#ffb5a0",
+                    "background": "#fbf9f8",
+                    "on-background": "#1b1c1c",
+                    "surface-dim": "#dcd9d9",
+                    "surface-container-low": "#f6f3f2",
+                    "outline": "#89726c",
+                    "on-secondary-container": "#546a2e",
+                    "secondary": "#50652a",
+                    "on-primary-fixed-variant": "#7d2c13",
+                    "on-error-container": "#93000a",
+                    "error-container": "#ffdad6",
+                    "secondary-fixed": "#d2eca2",
+                    "primary-fixed-dim": "#ffb5a0",
+                    "on-error": "#ffffff",
+                    "surface-tint": "#9c4328",
+                    "on-primary": "#ffffff",
+                    "surface-container-high": "#eae8e7",
+                    "on-tertiary-fixed-variant": "#4c4733",
+                    "tertiary": "#615c47",
+                    "primary-fixed": "#ffdbd1",
+                    "on-tertiary-fixed": "#1f1c0b",
+                    "primary": "#994126",
+                    "tertiary-fixed-dim": "#cec6ad",
+                    "surface-bright": "#fbf9f8",
+                    "primary-container": "#b8583c",
+                    "error": "#ba1a1a",
+                    "on-surface": "#1b1c1c",
+                    "secondary-fixed-dim": "#b6d088",
+                    "on-primary-container": "#fffbff",
+                    "surface-container-highest": "#e4e2e1",
+                    "tertiary-fixed": "#ebe2c8",
+                    "surface-container": "#f0eded",
+                    "on-primary-fixed": "#3b0a00",
+                    "inverse-on-surface": "#f3f0f0",
+                    "on-tertiary": "#ffffff",
+                    "outline-variant": "#dcc1b9",
+                    "surface-container-lowest": "#ffffff",
+                    "on-secondary": "#ffffff",
+                    "inverse-surface": "#303030",
+                    "on-secondary-fixed-variant": "#394d14"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Noto Serif"],
+                    "body": ["Manrope"],
+                    "label": ["Manrope"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .editorial-overlap {
+            margin-top: -10vh;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body">
+<!-- Top Navigation -->
+<nav class="fixed top-0 w-full z-50 bg-surface/80 dark:bg-stone-900/80 backdrop-blur-md">
+<div class="flex justify-between items-center px-12 py-6 max-w-screen-2xl mx-auto">
+<span class="text-2xl font-serif text-orange-900 dark:text-orange-100 italic">Sahara Mirage</span>
+<div class="hidden md:flex items-center space-x-10">
+<a class="text-stone-600 dark:text-stone-400 font-label text-[0.75rem] uppercase tracking-wider hover:text-orange-700 transition-colors duration-300" href="#">Tours</a>
+<a class="text-orange-900 dark:text-orange-100 border-b-2 border-orange-800/30 pb-1 font-label text-[0.75rem] uppercase tracking-wider hover:text-orange-700 transition-colors duration-300" href="#">Destinations</a>
+<a class="text-stone-600 dark:text-stone-400 font-label text-[0.75rem] uppercase tracking-wider hover:text-orange-700 transition-colors duration-300" href="#">Custom Trip</a>
+<a class="text-stone-600 dark:text-stone-400 font-label text-[0.75rem] uppercase tracking-wider hover:text-orange-700 transition-colors duration-300" href="#">About</a>
+<a class="text-stone-600 dark:text-stone-400 font-label text-[0.75rem] uppercase tracking-wider hover:text-orange-700 transition-colors duration-300" href="#">Blog</a>
+</div>
+<button class="bg-primary text-on-primary px-8 py-3 rounded-xl font-label text-[0.75rem] uppercase tracking-widest hover:bg-primary-container transition-all duration-300">
+                Contact Us
+            </button>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="relative h-[921px] flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 bg-stone-900/20 z-10"></div>
+<img alt="Vast Saharan sand dunes at golden hour" class="absolute inset-0 w-full h-full object-cover filter brightness-75 contrast-110" data-alt="Cinematic wide shot of rolling sand dunes in the Sahara desert at sunset, warm golden orange lighting and deep blue shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDeB2FyXlOmHlPu1J7FRJqMI8BLXwrR1BdKPjiT8oXqJfXw0wn2fXv64dR1FxPMhfJnjPSBN_6ZmrPQ2PWXG3nfre3dEOclwY_R_iCAjyWhRpFZGQrT5rIY5pLTq4gTSo2FXSECWjUnLw_yyxTWacibY2bKwOigDCsQ6jR4lbk1HnlxYc2QPP-UvRNq4A-Rfv38DdWTkdLXs0vNrZ9IbkSimQKExKzltjpG7PFPy-ctLRrKQZdbBsuU0Rqf3J1HapItg08aOdgNYIs"/>
+<div class="relative z-20 text-center max-w-4xl px-6">
+<span class="font-label text-on-primary text-[0.75rem] uppercase tracking-[0.4em] mb-6 block">The Essence of Morocco</span>
+<h1 class="font-headline text-[3.5rem] md:text-[5rem] text-on-primary leading-tight mb-8">Explore the Soul of Morocco</h1>
+<div class="h-16 w-px bg-on-primary/40 mx-auto"></div>
+</div>
+</section>
+<!-- Region Grid (Editorial Layout) -->
+<section class="py-24 px-12 max-w-screen-2xl mx-auto editorial-overlap">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+<!-- Atlas Mountains -->
+<div class="bg-surface-container-lowest p-8 flex flex-col justify-end min-h-[500px] relative overflow-hidden group">
+<img alt="Atlas Mountains Village" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="High Atlas mountain peaks with traditional Berber village stone houses clinging to the slope, soft afternoon mountain light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBSgrY6sviQoaapZ5LcBbPbGN-ffdXjwsidks0OoTQIPQA7GXJlPfHBIq5ihmOLyZFUmkP7seuHSyGhQIanPIPg1Iy1Ml_f-NYg9eUhmmwNJNn4HA1c2Q1bBJL_B4knw5C1UADnpd_Y1kaBFjO1TbeeS18iIWhQdO-zx7MpDvkNy-nEZkYcLVtzr8zxK_i4aWUHRuYdhDgSr2gPjtdn0VvgawnK0Gack1H5A3IA3Ou1dbcgVRpBuyRrvL70RfVUYL5mQIlEvd8zfeI"/>
+<div class="absolute inset-0 bg-gradient-to-t from-stone-900/80 via-transparent to-transparent"></div>
+<div class="relative z-10">
+<span class="font-label text-on-primary/80 text-[0.65rem] uppercase tracking-widest mb-2 block">High Altitude</span>
+<h3 class="font-headline text-2xl text-on-primary mb-4">Atlas Mountains</h3>
+<p class="text-on-primary/70 text-sm font-body leading-relaxed max-h-0 group-hover:max-h-20 transition-all duration-500 overflow-hidden">Rugged peaks and ancient Berber culture nestled in the heart of the range.</p>
+</div>
+</div>
+<!-- Sahara Desert -->
+<div class="bg-surface-container-lowest p-8 flex flex-col justify-end min-h-[500px] relative overflow-hidden group md:translate-y-12">
+<img alt="Camel Trek in Sahara" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Close-up of a camel caravan silhouetted against giant orange sand dunes in the Merzouga desert during twilight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBYH2Yl8tzHAm-aPegY9WQKo1UwyCbHm2lflWfvYPg4zKyr36MT_8eKS8lzMswJSKI4xt_ammnB7aKrY24Lnz7CZ8yyNmPZpZRLwoMlIqpSb2orjx3_SLwX9kX27ksMG9oOPQflGnhjVDwrQ-UYlu1mpl0Za1tzbg6CwIFkk-KcE4XaAZsF2Ycbinp1T4FhxaysJuMy2vTwtNARK9a6Ih3DEpeJOhHAZLlstnVQkjDPPMuLbDDq17xuw5Xm1T8qWFS4Vp9peYptkAY"/>
+<div class="absolute inset-0 bg-gradient-to-t from-stone-900/80 via-transparent to-transparent"></div>
+<div class="relative z-10">
+<span class="font-label text-on-primary/80 text-[0.65rem] uppercase tracking-widest mb-2 block">Infinite Sands</span>
+<h3 class="font-headline text-2xl text-on-primary mb-4">Sahara Desert</h3>
+<p class="text-on-primary/70 text-sm font-body leading-relaxed max-h-0 group-hover:max-h-20 transition-all duration-500 overflow-hidden">Celestial nights and timeless dunes stretching toward the horizon.</p>
+</div>
+</div>
+<!-- Imperial Cities -->
+<div class="bg-surface-container-lowest p-8 flex flex-col justify-end min-h-[500px] relative overflow-hidden group">
+<img alt="Medina Architecture" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Intricate zellij tilework and carved cedar wood in a traditional Moroccan madrasa, architectural detail with warm light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAzAVGGNgV5CmLTg7WuV5FxFJdjaK4N2gZUTGvgvZonxAzaBuG1Hm_MEA-N2Jh6MNWi8APKuyTigqhkF1_2PnKsfiBm0ZzS2jjjk8zxmAxxZXYI3MnDl-LSQjKP_LyHy1Jj1wnCLatCkju5OSQM2oOMFeFGv9BYJs1fNb6E3k8ZzY2nEaRmKqX-f5HgBfNHmlnE5b6fH8zOyVKIHZIQdrgdSduMf3xT76-U4eG647T1BqTkIXMVS1F15VpQsvdlCch9YkWBc49B9lI"/>
+<div class="absolute inset-0 bg-gradient-to-t from-stone-900/80 via-transparent to-transparent"></div>
+<div class="relative z-10">
+<span class="font-label text-on-primary/80 text-[0.65rem] uppercase tracking-widest mb-2 block">History &amp; Art</span>
+<h3 class="font-headline text-2xl text-on-primary mb-4">Imperial Cities</h3>
+<p class="text-on-primary/70 text-sm font-body leading-relaxed max-h-0 group-hover:max-h-20 transition-all duration-500 overflow-hidden">Wandering through the storied medinas of Fes, Meknes, and Rabat.</p>
+</div>
+</div>
+<!-- Atlantic Coast -->
+<div class="bg-surface-container-lowest p-8 flex flex-col justify-end min-h-[500px] relative overflow-hidden group md:translate-y-12">
+<img alt="Essaouira Coastline" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Blue fishing boats in the harbor of Essaouira with white coastal city walls and seagulls under a bright blue sky" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCCH9YtLHPCyNBhRNIRW2phM_oxwywnRifQ3W3nxaeHUD95qJ1wv4Mzkl6E35fDBuMGOFZRbdgQt1nfPN7m9SvnClVnx0oJugkmyyI9zsAzmIRva4rw7CnnDQIJlt3jIL1Q47gHKdOisIQmExElhJe5jzCE_MldzR5O8XdVXIws08oGBTJd2DN6e1_24iuioOaMnutdcDB5q-sChOjosf31mfDHra1s75N3kbnl9l6fPELTMslRP47OYcjlKHTRWRyrgUidnzyc2GE"/>
+<div class="absolute inset-0 bg-gradient-to-t from-stone-900/80 via-transparent to-transparent"></div>
+<div class="relative z-10">
+<span class="font-label text-on-primary/80 text-[0.65rem] uppercase tracking-widest mb-2 block">Salt Air</span>
+<h3 class="font-headline text-2xl text-on-primary mb-4">Atlantic Coast</h3>
+<p class="text-on-primary/70 text-sm font-body leading-relaxed max-h-0 group-hover:max-h-20 transition-all duration-500 overflow-hidden">The breezy charm of Essaouira and the white-washed walls of Asilah.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Curated Spotlights -->
+<section class="py-32 bg-surface-container-low">
+<div class="max-w-screen-2xl mx-auto px-12">
+<div class="flex flex-col md:flex-row justify-between items-end mb-24">
+<div class="max-w-2xl">
+<span class="font-label text-primary text-[0.75rem] uppercase tracking-[0.3em] mb-4 block">Seasonal Highlights</span>
+<h2 class="font-headline text-[3rem] text-on-surface-variant leading-tight">Curated Spotlights: The Heart of the Journey</h2>
+</div>
+<p class="text-on-surface-variant font-body body-lg max-w-sm italic opacity-80 pb-2">
+                    Three destinations hand-selected for their atmospheric depth and cultural resonance this season.
+                </p>
+</div>
+<!-- Spotlight 1: Marrakech (Asymmetric Overlap) -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-center mb-40">
+<div class="md:col-span-7 relative">
+<img alt="Marrakech Courtyard" class="w-full aspect-[4/5] object-cover rounded-sm shadow-xl" data-alt="Traditional Moroccan riad courtyard with a central pool, lush plants, and intricate arches under soft afternoon light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-FDn__xh-LtRcv2-w34fl_WNqPAlRIRMDNkhlLZ_5MCWGN1B_CYDNWpHcOinktT58WtdPx4yjsqDvLZFnKEpVrC35r76bkN5_Zn41Tt_uremyqZOLVVs7dm37tvdaCCz1PhObmphfJ9aqQmnlUOGTOpWxrTAlRL2LGSZVNwI4OoKKot2wp3r_jOf29gkNZTuKpQW8IiXytHmmE7j7IOFO3CSXbDF8SP8jymtmBLb4W5nNeP_xscM9BBbchY8mpbT2JIL4ybH54jc"/>
+<div class="absolute -bottom-12 -right-12 hidden md:block bg-surface p-10 max-w-md shadow-2xl">
+<span class="font-label text-primary text-[0.65rem] uppercase tracking-widest mb-4 block">The Red City</span>
+<h4 class="font-headline text-3xl mb-6">Marrakech</h4>
+<p class="text-on-surface-variant font-body leading-relaxed opacity-90">
+                            A sensory tapestry of spice-scented souks, hidden riads, and the vibrant pulse of Jemaa el-Fnaa. Marrakech is where tradition meets the contemporary nomad.
+                        </p>
+<a class="inline-block mt-8 font-label text-xs uppercase tracking-widest border-b border-primary pb-1 text-primary hover:opacity-70 transition-opacity" href="#">Discover Riads</a>
+</div>
+</div>
+<div class="md:col-span-5 md:pl-12 block md:hidden">
+<h4 class="font-headline text-3xl mb-6">Marrakech</h4>
+<p class="text-on-surface-variant font-body leading-relaxed opacity-90">
+                        A sensory tapestry of spice-scented souks, hidden riads, and the vibrant pulse of Jemaa el-Fnaa.
+                    </p>
+</div>
+</div>
+<!-- Spotlight 2: Fes (Reversed Layout) -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-center mb-40">
+<div class="md:col-span-5 md:pr-12 order-2 md:order-1 text-right">
+<div class="bg-surface p-10 shadow-2xl relative z-10 -mr-24 hidden md:block">
+<span class="font-label text-primary text-[0.65rem] uppercase tracking-widest mb-4 block">The Intellectual Capital</span>
+<h4 class="font-headline text-3xl mb-6">Fes</h4>
+<p class="text-on-surface-variant font-body leading-relaxed opacity-90">
+                            Lose yourself in the world's largest car-free urban space. Fes el Bali is a medieval labyrinth of tanneries, madrasas, and timeless artisan craft.
+                        </p>
+<a class="inline-block mt-8 font-label text-xs uppercase tracking-widest border-b border-primary pb-1 text-primary hover:opacity-70 transition-opacity" href="#">Explore the Medina</a>
+</div>
+<div class="md:hidden text-left mt-8">
+<h4 class="font-headline text-3xl mb-6">Fes</h4>
+<p class="text-on-surface-variant font-body leading-relaxed opacity-90">
+                            Lose yourself in the world's largest car-free urban space.
+                        </p>
+</div>
+</div>
+<div class="md:col-span-7 order-1 md:order-2">
+<img alt="Fes Tannery" class="w-full aspect-[4/5] object-cover rounded-sm shadow-xl" data-alt="Aerial view of the colorful Chouara Tannery in Fes with stone vats of dye and leather skins drying in the sun" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC7Wo9i5I-yhcvzxKgZB_rqjFgmCt1BcFbFFv8ict6abiZecbRIP7adpibUaDhKsyc4AHib70PonOrdAPG-9AOoXxT75RApnwGMecvGL8cKSeBwXFu12MoRLYEoR9obt4htRm8pqJqAcEFIqAhf4hvAhnTB2ANgo6yLOl-H17-94INOMjCFxd4CpQP_0UTeo_4NoxDK5yMM0RdY-dMo3pD3T815D2D0JydT3dMU-rKThOZWbze-LZ8JlUwGXqLmef4R5l-ZhjRF-CI"/>
+</div>
+</div>
+<!-- Spotlight 3: Merzouga (Cinematic Landscape) -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+<div class="md:col-span-8 relative">
+<img alt="Merzouga Night Sky" class="w-full aspect-[16/9] object-cover rounded-sm shadow-xl" data-alt="Luxury desert camp at night under a brilliant Milky Way galaxy sky in the Erg Chebbi dunes near Merzouga" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDlau8XoduVTQXcWSTPFNm3BCS6vyCe0Q4K1_Xs7_EqUMzlqloIyDx___BU0l3OB8IpeYba17pI6FLoiRG_jj7Dj4-Trwf6_kEn5Tcc_8OgRKU0UIKinOzpie0P5wvRCWI9zIRadE0MVrAJA5OHrcOOWZGZrkfCVVzxU5PpMBGB8rBrVrK_IiDYBcXgmgh2_uAyy2Ij7CnPUVoKmC3GdKqOj7FYHFrgwwzLi6lGcjTXXvFnzx2GStMvi7clONoCUKx-b0Abihme3-4"/>
+<div class="absolute -top-12 -left-12 hidden md:block bg-primary text-on-primary p-12 max-w-sm shadow-2xl">
+<span class="font-label text-on-primary/70 text-[0.65rem] uppercase tracking-widest mb-4 block">The Desert Portal</span>
+<h4 class="font-headline text-3xl mb-6">Merzouga</h4>
+<p class="font-body leading-relaxed opacity-90">
+                            Witness the transition from rocky plains to the majestic Erg Chebbi dunes. A gateway to nomadic life and celestial wonders under the desert sky.
+                        </p>
+</div>
+</div>
+<div class="md:col-span-4 md:pl-12">
+<div class="md:hidden mb-8">
+<h4 class="font-headline text-3xl mb-6">Merzouga</h4>
+<p class="text-on-surface-variant font-body leading-relaxed opacity-90">
+                            A gateway to nomadic life and celestial wonders under the desert sky.
+                        </p>
+</div>
+<div class="space-y-6">
+<div class="flex items-center space-x-4 border-b border-outline-variant/30 pb-4">
+<span class="material-symbols-outlined text-primary" data-icon="star">star</span>
+<span class="font-label text-[0.7rem] uppercase tracking-wider">Luxury Bivouacs</span>
+</div>
+<div class="flex items-center space-x-4 border-b border-outline-variant/30 pb-4">
+<span class="material-symbols-outlined text-primary" data-icon="nightlight">nightlight</span>
+<span class="font-label text-[0.7rem] uppercase tracking-wider">Astrophotography</span>
+</div>
+<div class="flex items-center space-x-4 border-b border-outline-variant/30 pb-4">
+<span class="material-symbols-outlined text-primary" data-icon="explore">explore</span>
+<span class="font-label text-[0.7rem] uppercase tracking-wider">Nomadic Trails</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="w-full mt-24 bg-stone-100 dark:bg-stone-950">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-12 py-20 max-w-screen-2xl mx-auto">
+<div class="space-y-6">
+<span class="text-3xl font-serif text-orange-900 dark:text-orange-100">Sahara Mirage</span>
+<p class="text-stone-500 dark:text-stone-400 font-body body-lg">© 2024 Sahara Mirage. Curated Journeys for the Modern Nomad.</p>
+</div>
+<div class="flex flex-col space-y-4">
+<span class="font-label text-[0.75rem] uppercase tracking-wider text-orange-900 dark:text-orange-200">Legal</span>
+<a class="text-stone-500 dark:text-stone-400 font-body hover:translate-x-1 transition-transform duration-200" href="#">Privacy Policy</a>
+<a class="text-stone-500 dark:text-stone-400 font-body hover:translate-x-1 transition-transform duration-200" href="#">Terms of Service</a>
+</div>
+<div class="flex flex-col space-y-4">
+<span class="font-label text-[0.75rem] uppercase tracking-wider text-orange-900 dark:text-orange-200">Support</span>
+<a class="text-stone-500 dark:text-stone-400 font-body hover:translate-x-1 transition-transform duration-200" href="#">Travel Insurance</a>
+<a class="text-stone-500 dark:text-stone-400 font-body hover:translate-x-1 transition-transform duration-200" href="#">Sustainability Pledge</a>
+</div>
+<div class="flex flex-col space-y-6">
+<span class="font-label text-[0.75rem] uppercase tracking-wider text-orange-900 dark:text-orange-200">Follow the Journey</span>
+<div class="flex space-x-6">
+<span class="material-symbols-outlined text-stone-500 cursor-pointer hover:text-primary transition-colors" data-icon="camera">camera</span>
+<span class="material-symbols-outlined text-stone-500 cursor-pointer hover:text-primary transition-colors" data-icon="public">public</span>
+<span class="material-symbols-outlined text-stone-500 cursor-pointer hover:text-primary transition-colors" data-icon="mail">mail</span>
+</div>
+</div>
+</div>
+</footer>
+<!-- FAB Concierge -->
+<button class="fixed bottom-10 right-10 bg-[#25D366] text-white p-5 rounded-full shadow-2xl flex items-center justify-center hover:scale-110 transition-transform z-50">
+<span class="material-symbols-outlined text-2xl" data-icon="chat" style="font-variation-settings: 'FILL' 1;">chat</span>
+</button>
+</body></html>

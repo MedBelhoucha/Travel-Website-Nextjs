@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contact Us | Sahara Mirage</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Manrope:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "tertiary-container": "#7b745e",
+                      "on-surface-variant": "#56423d",
+                      "surface": "#fbf9f8",
+                      "on-tertiary-container": "#fffbff",
+                      "secondary-container": "#cfe99f",
+                      "on-secondary-fixed": "#131f00",
+                      "surface-variant": "#e4e2e1",
+                      "inverse-primary": "#ffb5a0",
+                      "background": "#fbf9f8",
+                      "on-background": "#1b1c1c",
+                      "surface-dim": "#dcd9d9",
+                      "surface-container-low": "#f6f3f2",
+                      "outline": "#89726c",
+                      "on-secondary-container": "#546a2e",
+                      "secondary": "#50652a",
+                      "on-primary-fixed-variant": "#7d2c13",
+                      "on-error-container": "#93000a",
+                      "error-container": "#ffdad6",
+                      "secondary-fixed": "#d2eca2",
+                      "primary-fixed-dim": "#ffb5a0",
+                      "on-error": "#ffffff",
+                      "surface-tint": "#9c4328",
+                      "on-primary": "#ffffff",
+                      "surface-container-high": "#eae8e7",
+                      "on-tertiary-fixed-variant": "#4c4733",
+                      "tertiary": "#615c47",
+                      "primary-fixed": "#ffdbd1",
+                      "on-tertiary-fixed": "#1f1c0b",
+                      "primary": "#994126",
+                      "tertiary-fixed-dim": "#cec6ad",
+                      "surface-bright": "#fbf9f8",
+                      "primary-container": "#b8583c",
+                      "error": "#ba1a1a",
+                      "on-surface": "#1b1c1c",
+                      "secondary-fixed-dim": "#b6d088",
+                      "on-primary-container": "#fffbff",
+                      "surface-container-highest": "#e4e2e1",
+                      "tertiary-fixed": "#ebe2c8",
+                      "surface-container": "#f0eded",
+                      "on-primary-fixed": "#3b0a00",
+                      "inverse-on-surface": "#f3f0f0",
+                      "on-tertiary": "#ffffff",
+                      "outline-variant": "#dcc1b9",
+                      "surface-container-lowest": "#ffffff",
+                      "on-secondary": "#ffffff",
+                      "inverse-surface": "#303030",
+                      "on-secondary-fixed-variant": "#394d14"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "fontFamily": {
+                      "headline": [
+                              "Noto Serif"
+                      ],
+                      "body": [
+                              "Manrope"
+                      ],
+                      "label": [
+                              "Manrope"
+                      ]
+              }
+            },
+          },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .editorial-overlap {
+            margin-top: -120px;
+        }
+        .input-minimal {
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            border-bottom: 1px solid #dcc1b9;
+            background: transparent;
+            border-radius: 0;
+            padding: 12px 0;
+        }
+        .input-minimal:focus {
+            box-shadow: none;
+            border-bottom: 2px solid #994126;
+            outline: none;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-md">
+<div class="flex justify-between items-center px-12 py-6 max-w-screen-2xl mx-auto">
+<a class="text-2xl font-serif text-orange-900 italic" href="#">Sahara Mirage</a>
+<div class="hidden md:flex gap-10 items-center">
+<a class="text-stone-600 font-label text-xs uppercase tracking-wider hover:text-orange-700 transition-colors duration-300" href="#">Tours</a>
+<a class="text-stone-600 font-label text-xs uppercase tracking-wider hover:text-orange-700 transition-colors duration-300" href="#">Destinations</a>
+<a class="text-stone-600 font-label text-xs uppercase tracking-wider hover:text-orange-700 transition-colors duration-300" href="#">Custom Trip</a>
+<a class="text-stone-600 font-label text-xs uppercase tracking-wider hover:text-orange-700 transition-colors duration-300" href="#">About</a>
+<a class="text-stone-600 font-label text-xs uppercase tracking-wider hover:text-orange-700 transition-colors duration-300" href="#">Blog</a>
+</div>
+<a class="text-orange-900 border-b-2 border-orange-800/30 pb-1 font-label text-xs uppercase tracking-wider" href="#">Contact Us</a>
+</div>
+</nav>
+<!-- Hero Section -->
+<header class="relative w-full h-[614px] flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover opacity-90" data-alt="wide cinematic shot of a luxury desert resort at sunrise with soft golden light hitting sand dunes and warm architecture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWFDxMNE7bMi2aiej5KpO9bByVICPdfnnKM8iA2wes-CWo-fSQ0kyUe03BDbeBrB2LsBXLu1jXqtPpvQAw_QEq0ijz32B2O20mkxZJs8VmMXdfq8KxcDoZHSou8T0MHeinTujoCZP7X6HbV8fe5ShrVeI4wEGZIo9549yCChfZadRrc4Inc2DUZ5JDCIuvZkYx8fV346rFxnRlBnv4V_9v1JMMjl11bpOU50WUeFgJhitnIxbHkbYdKX-avy0I4KLrN14Ge4EVuyw"/>
+<div class="absolute inset-0 bg-stone-900/10"></div>
+</div>
+<div class="relative z-10 text-center px-6">
+<p class="font-label text-xs uppercase tracking-[0.2em] text-white mb-6">Begin Your Journey</p>
+<h1 class="font-headline text-5xl md:text-7xl lg:text-8xl text-white italic max-w-4xl leading-tight">
+                Let's Start Your Story
+            </h1>
+</div>
+</header>
+<!-- Main Content Canvas -->
+<main class="max-w-screen-2xl mx-auto px-6 md:px-12 mb-24">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-16 editorial-overlap bg-surface-container-lowest p-8 md:p-20 relative shadow-[0_20px_40px_rgba(86,66,61,0.06)] rounded-xl">
+<!-- Left Column: Get in Touch -->
+<div class="lg:col-span-5 flex flex-col justify-between">
+<div>
+<h2 class="font-headline text-3xl md:text-4xl text-on-surface-variant mb-12">Get in Touch</h2>
+<!-- Contact Details -->
+<div class="space-y-12">
+<!-- Office -->
+<div class="group">
+<span class="font-label text-[10px] uppercase tracking-widest text-primary mb-3 block">Marrakech Office</span>
+<p class="font-body text-lg text-on-surface leading-relaxed">
+                                42 Avenue Mohammed V<br/>
+                                Guéliz, Marrakech 40000<br/>
+                                Morocco
+                            </p>
+</div>
+<!-- Direct Lines -->
+<div class="group">
+<span class="font-label text-[10px] uppercase tracking-widest text-primary mb-3 block">Direct Lines</span>
+<div class="space-y-3">
+<a class="flex items-center gap-3 text-lg text-on-surface hover:text-primary transition-colors group" href="https://wa.me/212600000000">
+<span class="material-symbols-outlined text-[#25D366]" data-icon="chat">chat</span>
+<span>+212 (0) 600 000 000</span>
+<span class="text-[10px] uppercase tracking-tighter opacity-40">WhatsApp Concierge</span>
+</a>
+<a class="flex items-center gap-3 text-lg text-on-surface hover:text-primary transition-colors" href="tel:+212524000000">
+<span class="material-symbols-outlined text-outline" data-icon="call">call</span>
+<span>+212 (0) 524 000 000</span>
+</a>
+</div>
+</div>
+<!-- Email -->
+<div class="group">
+<span class="font-label text-[10px] uppercase tracking-widest text-primary mb-3 block">Email</span>
+<a class="text-xl md:text-2xl font-headline italic hover:text-primary transition-colors" href="mailto:concierge@saharamirage.com">
+                                concierge@saharamirage.com
+                            </a>
+</div>
+</div>
+</div>
+<!-- Social Section -->
+<div class="mt-20">
+<p class="font-label text-[10px] uppercase tracking-widest text-stone-400 mb-6">Follow the Mirage</p>
+<div class="flex gap-8">
+<a class="text-on-surface-variant hover:text-primary transition-all duration-300" href="#">
+<span class="material-symbols-outlined" data-icon="language">language</span>
+</a>
+<a class="text-on-surface-variant hover:text-primary transition-all duration-300" href="#">
+<span class="material-symbols-outlined" data-icon="photo_camera">photo_camera</span>
+</a>
+<a class="text-on-surface-variant hover:text-primary transition-all duration-300" href="#">
+<span class="material-symbols-outlined" data-icon="explore">explore</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Right Column: Inquiry Form -->
+<div class="lg:col-span-7 bg-surface p-8 md:p-12">
+<h3 class="font-headline text-2xl text-on-surface-variant mb-8">Inquiry Form</h3>
+<form class="space-y-10">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+<div class="relative">
+<label class="font-label text-[10px] uppercase tracking-widest text-stone-500 block mb-1">Full Name</label>
+<input class="w-full input-minimal font-body placeholder:text-stone-300" placeholder="Elias Vance" type="text"/>
+</div>
+<div class="relative">
+<label class="font-label text-[10px] uppercase tracking-widest text-stone-500 block mb-1">Email Address</label>
+<input class="w-full input-minimal font-body placeholder:text-stone-300" placeholder="elias@nomad.com" type="email"/>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+<div class="relative">
+<label class="font-label text-[10px] uppercase tracking-widest text-stone-500 block mb-1">Destination of Interest</label>
+<select class="w-full input-minimal font-body text-stone-600 appearance-none bg-transparent">
+<option>The Atlas Mountains</option>
+<option>Sahara Luxury Camp</option>
+<option>Chefchaouen Blues</option>
+<option>Marrakech Hidden Gems</option>
+</select>
+</div>
+<div class="relative">
+<label class="font-label text-[10px] uppercase tracking-widest text-stone-500 block mb-1">Travel Dates</label>
+<input class="w-full input-minimal font-body placeholder:text-stone-300" placeholder="Spring 2025" type="text"/>
+</div>
+</div>
+<div class="relative">
+<label class="font-label text-[10px] uppercase tracking-widest text-stone-500 block mb-1">Your Vision for the Trip</label>
+<textarea class="w-full input-minimal font-body placeholder:text-stone-300 resize-none" placeholder="Tell us about the experiences you crave..." rows="4"></textarea>
+</div>
+<div class="pt-6">
+<button class="w-full md:w-auto px-12 py-5 bg-primary text-on-primary font-label text-xs uppercase tracking-widest rounded-xl hover:bg-primary-container transition-all duration-300 shadow-xl shadow-primary/10" type="submit">
+                            Submit Inquiry
+                        </button>
+</div>
+</form>
+<p class="mt-8 text-[11px] text-stone-400 font-body text-center md:text-left">
+                    Our team typically responds within 24 luxury hours.
+                </p>
+</div>
+</div>
+</main>
+<!-- Experience Cards Section -->
+<section class="max-w-screen-2xl mx-auto px-12 pb-24 grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="relative aspect-[4/5] overflow-hidden group">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-90" data-alt="editorial portrait of a person walking through a detailed moroccan riad archway with intricate tiles" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-RV7Afl6_RsadjYiQ91AbKFb6CI2TnfdNK9SbqgAvNeNaP7tsRTFFJeAs28iMq391GXUzvAj6yh6aeL6OAbwycnQifG8hfLqbkKGZI82joxNvhA-jDY8nIDaFho16q9y7F_TMV5GTAeXRtqhruj86XWuE7cTZtcrX0IKS-TTJ7h4bI1irQswzzu_gugRNKOvqXqKB9J6Xbb_YOBrwDf0xlXy-f_vEl0TIhDREglQwtiBC3da3sSW3kS-XS-hLEfxaqOndJaeAYSc"/>
+<div class="absolute bottom-0 left-0 p-8 w-full bg-gradient-to-t from-black/60 to-transparent">
+<span class="font-label text-[10px] uppercase tracking-widest text-white/70">Expert Planning</span>
+<h4 class="font-headline text-xl text-white italic">The Curated Path</h4>
+</div>
+</div>
+<div class="relative aspect-[4/5] overflow-hidden group translate-y-12">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-90" data-alt="atmospheric shot of tajine pots over an open fire in the desert dusk with amber embers and soft smoke" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_BOxHqPLTtofUoADtiNz1DsQVdhFOLUok2m0euKx-d2aFDuLiWQ032_c6Z_J3ZH4q4KjDpXQ2NSQTC0fcxIDz3p5mdFSCYieS1j8RD3G_7jh1p8jwy_322ZW9olEJhjGsgOcwoZtnTlX7Sv1ShwlbgLVY3QtUuvahUpymp8_A09UyqViUFUdX6lZ2Urgvz3LgQIdc35oPDk6OLmwPdZ4AS4sMXkni5cp3eUvF8nUERA07bVCQg758EUQQ4QSJRC83Y3LTvinD1NY"/>
+<div class="absolute bottom-0 left-0 p-8 w-full bg-gradient-to-t from-black/60 to-transparent">
+<span class="font-label text-[10px] uppercase tracking-widest text-white/70">Signature Dining</span>
+<h4 class="font-headline text-xl text-white italic">A Taste of Mirage</h4>
+</div>
+</div>
+<div class="relative aspect-[4/5] overflow-hidden group">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-90" data-alt="aerial perspective of camels traversing golden sand dunes at sunset casting long elegant shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCi1l9hEuM3dtZK2n3trN0iIyAmabac2XyOZ42JfY6PC32v1QfH-KfcJcrwRkfagN9t_ilGSYGw4dk7wc2rot9GY1BbEEycqe6yK5XYZfnLx0qAo_KKAZsi5FL2XWkZke3zsk9Y_MKNI6oTKlENFw5VrpJDmQuFzKH6aup3MHZ3qWxqNQG8Xk8_rCA2niBGoLOqH4ff8TJd7JFsDqOL8LyzZvMomVmU9RIYSgJ-Ab9RoSl9dc9gHog-oNg7uRPhAEJSk04_58SRjEU"/>
+<div class="absolute bottom-0 left-0 p-8 w-full bg-gradient-to-t from-black/60 to-transparent">
+<span class="font-label text-[10px] uppercase tracking-widest text-white/70">Deep Desert</span>
+<h4 class="font-headline text-xl text-white italic">Hidden Valleys</h4>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="w-full mt-24 bg-stone-100 border-t border-transparent">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-12 py-20 max-w-screen-2xl mx-auto">
+<div class="col-span-1 md:col-span-2">
+<p class="text-3xl font-serif text-orange-900 mb-6">Sahara Mirage</p>
+<p class="font-body text-stone-500 max-w-sm leading-relaxed">
+                    Crafting immersive journeys through the soul of North Africa. We don't just book trips; we weave narratives that last a lifetime.
+                </p>
+</div>
+<div class="flex flex-col gap-4">
+<p class="font-label text-[10px] uppercase tracking-widest text-orange-900 mb-2">Legal</p>
+<a class="text-stone-500 text-sm hover:translate-x-1 transition-transform duration-200" href="#">Privacy Policy</a>
+<a class="text-stone-500 text-sm hover:translate-x-1 transition-transform duration-200" href="#">Terms of Service</a>
+<a class="text-stone-500 text-sm hover:translate-x-1 transition-transform duration-200" href="#">Travel Insurance</a>
+</div>
+<div class="flex flex-col gap-4">
+<p class="font-label text-[10px] uppercase tracking-widest text-orange-900 mb-2">Commitment</p>
+<a class="text-stone-500 text-sm hover:translate-x-1 transition-transform duration-200" href="#">Sustainability Pledge</a>
+<a class="text-stone-500 text-sm hover:translate-x-1 transition-transform duration-200" href="#">Local Impact</a>
+<a class="text-stone-500 text-sm hover:translate-x-1 transition-transform duration-200" href="#">Bespoke Design</a>
+</div>
+</div>
+<div class="px-12 py-8 border-t border-stone-200/50 max-w-screen-2xl mx-auto flex justify-between items-center">
+<p class="text-[10px] font-label uppercase tracking-widest text-stone-400">© 2024 Sahara Mirage. Curated Journeys for the Modern Nomad.</p>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-stone-300 text-lg" data-icon="public">public</span>
+<span class="material-symbols-outlined text-stone-300 text-lg" data-icon="eco">eco</span>
+</div>
+</div>
+</footer>
+</body></html>

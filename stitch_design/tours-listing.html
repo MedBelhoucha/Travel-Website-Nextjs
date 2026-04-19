@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Manrope:wght@300;400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary-container": "#7b745e",
+                    "on-surface-variant": "#56423d",
+                    "surface": "#fbf9f8",
+                    "on-tertiary-container": "#fffbff",
+                    "secondary-container": "#cfe99f",
+                    "on-secondary-fixed": "#131f00",
+                    "surface-variant": "#e4e2e1",
+                    "inverse-primary": "#ffb5a0",
+                    "background": "#fbf9f8",
+                    "on-background": "#1b1c1c",
+                    "surface-dim": "#dcd9d9",
+                    "surface-container-low": "#f6f3f2",
+                    "outline": "#89726c",
+                    "on-secondary-container": "#546a2e",
+                    "secondary": "#50652a",
+                    "on-primary-fixed-variant": "#7d2c13",
+                    "on-error-container": "#93000a",
+                    "error-container": "#ffdad6",
+                    "secondary-fixed": "#d2eca2",
+                    "primary-fixed-dim": "#ffb5a0",
+                    "on-error": "#ffffff",
+                    "surface-tint": "#9c4328",
+                    "on-primary": "#ffffff",
+                    "surface-container-high": "#eae8e7",
+                    "on-tertiary-fixed-variant": "#4c4733",
+                    "tertiary": "#615c47",
+                    "primary-fixed": "#ffdbd1",
+                    "on-tertiary-fixed": "#1f1c0b",
+                    "primary": "#994126",
+                    "tertiary-fixed-dim": "#cec6ad",
+                    "surface-bright": "#fbf9f8",
+                    "primary-container": "#b8583c",
+                    "error": "#ba1a1a",
+                    "on-surface": "#1b1c1c",
+                    "secondary-fixed-dim": "#b6d088",
+                    "on-primary-container": "#fffbff",
+                    "surface-container-highest": "#e4e2e1",
+                    "tertiary-fixed": "#ebe2c8",
+                    "surface-container": "#f0eded",
+                    "on-primary-fixed": "#3b0a00",
+                    "inverse-on-surface": "#f3f0f0",
+                    "on-tertiary": "#ffffff",
+                    "outline-variant": "#dcc1b9",
+                    "surface-container-lowest": "#ffffff",
+                    "on-secondary": "#ffffff",
+                    "inverse-surface": "#303030",
+                    "on-secondary-fixed-variant": "#394d14"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Noto Serif"],
+                    "body": ["Manrope"],
+                    "label": ["Manrope"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .editorial-shadow {
+            box-shadow: 0 20px 40px rgba(86, 66, 61, 0.06);
+        }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface antialiased">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/80 dark:bg-stone-900/80 backdrop-blur-md">
+<div class="flex justify-between items-center px-12 py-6 max-w-screen-2xl mx-auto">
+<div class="text-2xl font-serif text-orange-900 dark:text-orange-100 italic">Sahara Mirage</div>
+<!-- Desktop Navigation -->
+<div class="hidden md:flex items-center gap-8">
+<a class="text-orange-900 dark:text-orange-100 border-b-2 border-orange-800/30 pb-1 font-label text-[0.75rem] tracking-wider uppercase" href="#">Tours</a>
+<a class="text-stone-600 dark:text-stone-400 hover:text-orange-700 dark:hover:text-orange-300 transition-colors duration-300 font-label text-[0.75rem] tracking-wider uppercase" href="#">Destinations</a>
+<a class="text-stone-600 dark:text-stone-400 hover:text-orange-700 dark:hover:text-orange-300 transition-colors duration-300 font-label text-[0.75rem] tracking-wider uppercase" href="#">Custom Trip</a>
+<a class="text-stone-600 dark:text-stone-400 hover:text-orange-700 dark:hover:text-orange-300 transition-colors duration-300 font-label text-[0.75rem] tracking-wider uppercase" href="#">About</a>
+<a class="text-stone-600 dark:text-stone-400 hover:text-orange-700 dark:hover:text-orange-300 transition-colors duration-300 font-label text-[0.75rem] tracking-wider uppercase" href="#">Blog</a>
+</div>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-xl text-[0.75rem] font-label uppercase tracking-widest hover:bg-primary-container transition-all duration-300 active:scale-95">
+                Contact Us
+            </button>
+</div>
+</nav>
+<main class="pt-24">
+<!-- Hero Section -->
+<header class="relative h-[614px] flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 bg-on-surface/20 z-10"></div>
+<img alt="Sahara Desert Landscape" class="absolute inset-0 w-full h-full object-cover filter brightness-90" data-alt="wide cinematic shot of golden sahara sand dunes at sunrise with long shadows and soft warm atmospheric haze" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdz6pPmzhMndHWxBhH2GH2LMYkloYoXDVDNu64sA0rSqo7l7nf3oDq5ooBoFYIem1QWnZmZ4lD2Sm_jujETLHcpSOS10_8p7IYYMnQI98xVrcLs1HEZg-jI6Mb0ftrQyf0tl17zC2Yl--MMmh175Dmcmfh83UKsj2yNZOxU7IlXrLriK95Ws_vu3wI7q4Yn1sjpZ3ppaZPZviUcNT3P-qsy_ijh91iCWG7cORZdu_gYwjiKDMQa4W8PGLmYmCKbq69-BZEOHaOSpQ"/>
+<div class="relative z-20 text-center px-6">
+<h1 class="font-headline text-5xl md:text-7xl text-white drop-shadow-lg leading-tight">Our Curated Collections</h1>
+<p class="font-body text-white/90 text-lg md:text-xl mt-6 max-w-2xl mx-auto font-light italic">Hand-selected journeys through the soul of the Maghreb.</p>
+</div>
+</header>
+<!-- Filter Bar -->
+<section class="max-w-screen-2xl mx-auto px-12 mt-12 mb-16">
+<div class="flex flex-wrap justify-center gap-4 border-b border-outline-variant/30 pb-8">
+<button class="px-6 py-2 bg-primary text-on-primary rounded-full text-xs font-label uppercase tracking-widest transition-all">All</button>
+<button class="px-6 py-2 bg-surface-container-low text-on-surface-variant hover:bg-surface-container-high rounded-full text-xs font-label uppercase tracking-widest transition-all">Desert</button>
+<button class="px-6 py-2 bg-surface-container-low text-on-surface-variant hover:bg-surface-container-high rounded-full text-xs font-label uppercase tracking-widest transition-all">Culture</button>
+<button class="px-6 py-2 bg-surface-container-low text-on-surface-variant hover:bg-surface-container-high rounded-full text-xs font-label uppercase tracking-widest transition-all">Coast</button>
+<button class="px-6 py-2 bg-surface-container-low text-on-surface-variant hover:bg-surface-container-high rounded-full text-xs font-label uppercase tracking-widest transition-all">Luxury</button>
+<button class="px-6 py-2 bg-surface-container-low text-on-surface-variant hover:bg-surface-container-high rounded-full text-xs font-label uppercase tracking-widest transition-all">Short Breaks</button>
+</div>
+</section>
+<!-- Tour Grid -->
+<section class="max-w-screen-2xl mx-auto px-12">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16">
+<!-- Tour Card 1 -->
+<article class="group">
+<div class="relative aspect-[4/5] overflow-hidden rounded-lg mb-6">
+<img alt="Atlas Mountains Village" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="editorial portrait of a traditional earthen village in the atlas mountains with warm afternoon sun and terracotta tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3ImLhZ30HvuDRfjADUF4hnxp1uCibI-WLSAAEB5LNYfVPK5JieItQgL_hflrk_ZDSbqjfmYIQiYmJvl5ab8iaT0eBpEKd93EeNFgRExl8Q9rXqUW6Gq02sGXcbGnLwgbSzppwCLUaa54I3OYFAK3HYhTtEvrejALc7U-29k6OUexrGVLVc3Fu1u5Po0UyPzwgjedxleNbJenvwziIoMdWdMNtP6fakM-ZMqogfYNjmGTePpnX8Ey53VO5NEcMYhHGS53NCNifPq8"/>
+<div class="absolute top-4 left-4 bg-surface/90 backdrop-blur-md px-3 py-1 rounded-sm">
+<span class="text-[10px] font-label uppercase tracking-widest text-on-surface-variant">Featured</span>
+</div>
+</div>
+<div class="space-y-3">
+<div class="flex justify-between items-center">
+<span class="text-[0.7rem] font-label uppercase tracking-[0.2em] text-outline">High Atlas • 12 Days</span>
+<span class="text-primary font-bold text-lg">$2,850</span>
+</div>
+<h3 class="font-headline text-2xl text-on-surface group-hover:text-primary transition-colors">The Berber Soul Traverse</h3>
+<div class="flex items-center gap-4 text-stone-500 text-sm">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm" data-icon="groups">groups</span> Max 8 People</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm" data-icon="bed">bed</span> Luxury Camps</span>
+</div>
+</div>
+</article>
+<!-- Tour Card 2 -->
+<article class="group lg:translate-y-12">
+<div class="relative aspect-[4/5] overflow-hidden rounded-lg mb-6">
+<img alt="Chefchaouen Blue City" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="low angle shot of a blue-washed street in Chefchaouen with vibrant indigo walls and terracotta potted plants" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAuvJg7SLDa-fLyocIkCAJa5ubIWoRqASvxRJH5lQRv1_jifZVjdVdJBezo4LWDwq1QiqEtsngVcEFAOp6OmWV3TsB2XNQyQGTX6VJpZYbQ-4IApksH42ncbJBJaIGatrQ8HVRUk348U_5zbKwVy51R3SJ8byNDHK2-TnovgFeD7Zqtn_uznI4jKyqve0lDaxH3x1RC2IiKona6hjKYYG3p25_Utv0T85rOLlunXb7BhGcCozV-JOjDFuCPZFQ934ZgglHMMmf9YgM"/>
+<div class="absolute top-4 left-4 bg-surface/90 backdrop-blur-md px-3 py-1 rounded-sm">
+<span class="text-[10px] font-label uppercase tracking-widest text-on-surface-variant">Cultural Heart</span>
+</div>
+</div>
+<div class="space-y-3">
+<div class="flex justify-between items-center">
+<span class="text-[0.7rem] font-label uppercase tracking-[0.2em] text-outline">Northern Cities • 7 Days</span>
+<span class="text-primary font-bold text-lg">$1,920</span>
+</div>
+<h3 class="font-headline text-2xl text-on-surface group-hover:text-primary transition-colors">Indigo Shadows &amp; Spice Roads</h3>
+<div class="flex items-center gap-4 text-stone-500 text-sm">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm" data-icon="groups">groups</span> Max 12 People</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm" data-icon="restaurant">restaurant</span> Gastronomic Focus</span>
+</div>
+</div>
+</article>
+<!-- Tour Card 3 -->
+<article class="group">
+<div class="relative aspect-[4/5] overflow-hidden rounded-lg mb-6">
+<img alt="Sahara Stars" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="dramatic night scene of a luxury desert camp under a clear milky way galaxy sky with soft warm light from lanterns" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCaJBZHy3NZAgBeK7KlrGgMl7cTY18-Lx7dIiJC4NXzM8pmtIiCCwkL8Va7SIvmUFZlaGIyYFe9uxSj1AbhQF7hFKmXLMg3yXShmyibPLnathtjREIXG08mwZc1k2HsGOwQ4gDzJEsTofA01ns0Neu6YcBcJeRGwnwlikWqV8P7kvoroHVXngt18RLb3UbNnZKOh1XTHKmxY218WrqOp9OXldsIMbtw6oT4RWAF6Oh2bc3qFMMtrfGpogivBFGoCWjXPBMxfux4Hqg"/>
+<div class="absolute top-4 left-4 bg-surface/90 backdrop-blur-md px-3 py-1 rounded-sm">
+<span class="text-[10px] font-label uppercase tracking-widest text-on-surface-variant">Exclusive</span>
+</div>
+</div>
+<div class="space-y-3">
+<div class="flex justify-between items-center">
+<span class="text-[0.7rem] font-label uppercase tracking-[0.2em] text-outline">Erg Chebbi • 5 Days</span>
+<span class="text-primary font-bold text-lg">$3,400</span>
+</div>
+<h3 class="font-headline text-2xl text-on-surface group-hover:text-primary transition-colors">Starlit Solitude Safari</h3>
+<div class="flex items-center gap-4 text-stone-500 text-sm">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm" data-icon="groups">groups</span> Max 4 People</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm" data-icon="star">star</span> Ultra-Luxury</span>
+</div>
+</div>
+</article>
+<!-- Tour Card 4 -->
+<article class="group">
+<div class="relative aspect-[4/5] overflow-hidden rounded-lg mb-6">
+<img alt="Coastal Essaouira" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="atmospheric wide shot of the essaouira coast at sunset with sea spray and historical ramparts in the background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBwp9trw-BatPsbb7f5T7w_tJNikrI632ixzQIWzDGK_V2yXizpklHdA_KMVpPXzTdDlqN8AXdJ1sj-FN5Vw6PbMl7O5kC1s2A-Zmf_Toqnlwn-1E2OY9bAH-Jfeirykua18sHgUH8HV3tD6QFv5g55aZmPMwj-FLtHnYSd47qKuslfDLOdbN2seaTM4fAMwWIVG2gKQqxh38OgNBtMhgG3UeH2_epDybPE_L1GCGyAg-5e0bAKiUfC0C1rlFAtMN8GLG0jsyGxrNo"/>
+</div>
+<div class="space-y-3">
+<div class="flex justify-between items-center">
+<span class="text-[0.7rem] font-label uppercase tracking-[0.2em] text-outline">Atlantic Coast • 8 Days</span>
+<span class="text-primary font-bold text-lg">$2,150</span>
+</div>
+<h3 class="font-headline text-2xl text-on-surface group-hover:text-primary transition-colors">The Wind &amp; The Ramparts</h3>
+<div class="flex items-center gap-4 text-stone-500 text-sm">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm" data-icon="groups">groups</span> Max 10 People</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm" data-icon="waves">waves</span> Oceanfront Riads</span>
+</div>
+</div>
+</article>
+<!-- Tour Card 5 -->
+<article class="group lg:translate-y-12">
+<div class="relative aspect-[4/5] overflow-hidden rounded-lg mb-6">
+<img alt="Marrakech Market" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="vibrant and busy souk in Marrakech with hanging copper lamps and colorful spice mounds with soft shafts of sunlight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBuMIrvTytuBpKzBO89kxVEDHupwkw8psjpGg4Coo0Pz9TwFWXfMt2FoKFFEcaPAeTRB7rINor0XRQ8sYPpXQyDF6na_AaiKxZ10pJbeiJ02A8LKm_RnnawRilCm8Q7msQtep3eJRPY-E-uELxEiMdvoKDLWF7PVbiE5_PFDPhcKhIlgE4N9KEG-TLq7iuNXofFUZsj01fek-0SzsUP2o9AWeKwCBezqqEt4ZoVlwXkXA2IDKo7WIYW8gSzLkgvUFtbrLKQHBGJgh0"/>
+</div>
+<div class="space-y-3">
+<div class="flex justify-between items-center">
+<span class="text-[0.7rem] font-label uppercase tracking-[0.2em] text-outline">City Short Break • 4 Days</span>
+<span class="text-primary font-bold text-lg">$890</span>
+</div>
+<h3 class="font-headline text-2xl text-on-surface group-hover:text-primary transition-colors">Marrakech: The Hidden Medina</h3>
+<div class="flex items-center gap-4 text-stone-500 text-sm">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm" data-icon="groups">groups</span> Private Tour</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm" data-icon="explore">explore</span> Expert Local Guide</span>
+</div>
+</div>
+</article>
+<!-- Tour Card 6 -->
+<article class="group">
+<div class="relative aspect-[4/5] overflow-hidden rounded-lg mb-6">
+<img alt="Oasis Garden" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="lush green palm oasis garden with ancient clay irrigation channels and soft dappled sunlight through palm fronds" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBBGgc9g2xzsghTjjHzAgc5iX-6_OIdctN-n_hkhk2rUx1qVA3cp0lj4OqI6kOPI-uA2bc_LrnShscazndtLUkpAmbRkqm-07fHhUn8Qdbkl9MfA1bvJQnheT44DTrENb2B3qIdVLwYw-irSFux7eHnNMD5lXaq6TuXH8PO1OGp_7pypUUsgcTINyiz2CjBtdCEGefdJdPL0H0A_fdvo1bofJh2PU_mfxaxtzd7OERklsBtG7io679A4PKa9yAYLmKwEn7dmnceJS4"/>
+</div>
+<div class="space-y-3">
+<div class="flex justify-between items-center">
+<span class="text-[0.7rem] font-label uppercase tracking-[0.2em] text-outline">Skoura Oasis • 6 Days</span>
+<span class="text-primary font-bold text-lg">$1,650</span>
+</div>
+<h3 class="font-headline text-2xl text-on-surface group-hover:text-primary transition-colors">Gardens of the Draa Valley</h3>
+<div class="flex items-center gap-4 text-stone-500 text-sm">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm" data-icon="groups">groups</span> Max 6 People</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm" data-icon="nature">nature</span> Sustainable Travel</span>
+</div>
+</div>
+</article>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="mt-32 mb-24 px-12">
+<div class="max-w-screen-xl mx-auto bg-stone-100 p-16 md:p-24 relative overflow-hidden flex flex-col md:flex-row items-center justify-between gap-12 editorial-shadow">
+<div class="relative z-10 max-w-xl">
+<h2 class="font-headline text-4xl md:text-5xl text-on-surface mb-6 leading-tight">Looking for something unique?</h2>
+<p class="font-body text-on-surface-variant text-lg mb-8">Let us weave your personal narrative. Our master concierges specialize in crafting bespoke itineraries tailored to your specific rhythm and curiosities.</p>
+<button class="bg-primary text-on-primary px-10 py-4 rounded-xl text-sm font-label uppercase tracking-widest hover:bg-primary-container transition-all active:scale-95">
+                        Build Your Custom Trip
+                    </button>
+</div>
+<div class="relative z-10 w-full md:w-1/3">
+<img alt="Notebook and Coffee" class="w-full aspect-[4/5] object-cover editorial-shadow" data-alt="close up of a leather bound travel journal and a glass of mint tea on a decorative brass table in a sunlit courtyard" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZM1dI8dYz9T1tvn-JyanyyvYfnHU6sGOpAnpwStndiUlSuPSsZazp4_B6O4OqO_4Z1Arz4ot9xJioMZowPPI_PWl9Na1KVVt_616-2SVibM1UnuFlpTwVtSnOTyB1Z0bDSdtwmVgrTXmwkyT96BqbKXYlz6rHBT5MDYk3vAc7hcTbViR9oyFjlo12Qa3W9-hcEMVzZDLSoVEKth9WbourA5F1TaFm-UwmZgDupHidb_ZisqCFctCwX8NiaSoo3fb1k0J6It3LXdw"/>
+</div>
+<!-- Abstract Decorative Element -->
+<div class="absolute -right-20 -bottom-20 w-96 h-96 bg-primary/5 rounded-full blur-3xl"></div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full mt-24 bg-stone-100 dark:bg-stone-950">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-12 py-20 max-w-screen-2xl mx-auto">
+<div class="space-y-6">
+<div class="text-3xl font-serif text-orange-900 dark:text-orange-100">Sahara Mirage</div>
+<p class="text-stone-500 font-body body-lg">© 2024 Sahara Mirage. Curated Journeys for the Modern Nomad.</p>
+</div>
+<div>
+<h4 class="font-label uppercase text-[0.75rem] tracking-widest text-orange-900 mb-8">Navigation</h4>
+<ul class="space-y-4">
+<li><a class="text-stone-500 hover:translate-x-1 transition-transform duration-200 block text-sm" href="#">Tours</a></li>
+<li><a class="text-stone-500 hover:translate-x-1 transition-transform duration-200 block text-sm" href="#">Destinations</a></li>
+<li><a class="text-stone-500 hover:translate-x-1 transition-transform duration-200 block text-sm" href="#">Custom Trip</a></li>
+<li><a class="text-stone-500 hover:translate-x-1 transition-transform duration-200 block text-sm" href="#">About Us</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label uppercase text-[0.75rem] tracking-widest text-orange-900 mb-8">Support</h4>
+<ul class="space-y-4">
+<li><a class="text-stone-500 hover:translate-x-1 transition-transform duration-200 block text-sm" href="#">Travel Insurance</a></li>
+<li><a class="text-stone-500 hover:translate-x-1 transition-transform duration-200 block text-sm" href="#">Sustainability Pledge</a></li>
+<li><a class="text-stone-500 hover:translate-x-1 transition-transform duration-200 block text-sm" href="#">FAQ</a></li>
+<li><a class="text-stone-500 hover:translate-x-1 transition-transform duration-200 block text-sm" href="#">Privacy Policy</a></li>
+</ul>
+</div>
+<div class="space-y-6">
+<h4 class="font-label uppercase text-[0.75rem] tracking-widest text-orange-900 mb-8">Contact</h4>
+<p class="text-stone-500 text-sm">hello@saharamirage.travel</p>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-orange-900/40">public</span>
+<span class="material-symbols-outlined text-orange-900/40">local_post_office</span>
+<span class="material-symbols-outlined text-orange-900/40">map</span>
+</div>
+</div>
+</div>
+</footer>
+<!-- Concierge FAB -->
+<div class="fixed bottom-8 right-8 z-[100]">
+<button class="bg-[#25D366] text-white p-4 rounded-full shadow-2xl flex items-center gap-3 hover:scale-105 transition-transform">
+<span class="material-symbols-outlined">chat</span>
+<span class="font-label text-xs uppercase tracking-widest pr-2 hidden md:inline">Concierge</span>
+</button>
+</div>
+</body></html>

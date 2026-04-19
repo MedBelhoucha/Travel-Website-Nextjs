@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Sahara Mirage | Curated Journeys</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary-container": "#7b745e",
+                    "on-surface-variant": "#56423d",
+                    "surface": "#fbf9f8",
+                    "on-tertiary-container": "#fffbff",
+                    "secondary-container": "#cfe99f",
+                    "on-secondary-fixed": "#131f00",
+                    "surface-variant": "#e4e2e1",
+                    "inverse-primary": "#ffb5a0",
+                    "background": "#fbf9f8",
+                    "on-background": "#1b1c1c",
+                    "surface-dim": "#dcd9d9",
+                    "surface-container-low": "#f6f3f2",
+                    "outline": "#89726c",
+                    "on-secondary-container": "#546a2e",
+                    "secondary": "#50652a",
+                    "on-primary-fixed-variant": "#7d2c13",
+                    "on-error-container": "#93000a",
+                    "error-container": "#ffdad6",
+                    "secondary-fixed": "#d2eca2",
+                    "primary-fixed-dim": "#ffb5a0",
+                    "on-error": "#ffffff",
+                    "surface-tint": "#9c4328",
+                    "on-primary": "#ffffff",
+                    "surface-container-high": "#eae8e7",
+                    "on-tertiary-fixed-variant": "#4c4733",
+                    "tertiary": "#615c47",
+                    "primary-fixed": "#ffdbd1",
+                    "on-tertiary-fixed": "#1f1c0b",
+                    "primary": "#994126",
+                    "tertiary-fixed-dim": "#cec6ad",
+                    "surface-bright": "#fbf9f8",
+                    "primary-container": "#b8583c",
+                    "error": "#ba1a1a",
+                    "on-surface": "#1b1c1c",
+                    "secondary-fixed-dim": "#b6d088",
+                    "on-primary-container": "#fffbff",
+                    "surface-container-highest": "#e4e2e1",
+                    "tertiary-fixed": "#ebe2c8",
+                    "surface-container": "#f0eded",
+                    "on-primary-fixed": "#3b0a00",
+                    "inverse-on-surface": "#f3f0f0",
+                    "on-tertiary": "#ffffff",
+                    "outline-variant": "#dcc1b9",
+                    "surface-container-lowest": "#ffffff",
+                    "on-secondary": "#ffffff",
+                    "inverse-surface": "#303030",
+                    "on-secondary-fixed-variant": "#394d14"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Noto Serif"],
+                    "body": ["Manrope"],
+                    "label": ["Manrope"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .editorial-overlap {
+            margin-top: -120px;
+        }
+        .asymmetric-offset {
+            transform: translateY(40px);
+        }
+    </style>
+</head>
+<body class="bg-background font-body text-on-background antialiased selection:bg-primary/20">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-surface/80 dark:bg-stone-900/80 backdrop-blur-md">
+<nav class="flex justify-between items-center px-12 py-6 max-w-screen-2xl mx-auto">
+<a class="text-2xl font-serif text-orange-900 dark:text-orange-100 italic font-headline" href="#">Sahara Mirage</a>
+<div class="hidden md:flex space-x-10">
+<a class="text-stone-600 dark:text-stone-400 font-label text-[0.75rem] uppercase tracking-wider hover:text-orange-700 transition-colors duration-300" href="#">Tours</a>
+<a class="text-stone-600 dark:text-stone-400 font-label text-[0.75rem] uppercase tracking-wider hover:text-orange-700 transition-colors duration-300" href="#">Destinations</a>
+<a class="text-stone-600 dark:text-stone-400 font-label text-[0.75rem] uppercase tracking-wider hover:text-orange-700 transition-colors duration-300" href="#">Custom Trip</a>
+<a class="text-stone-600 dark:text-stone-400 font-label text-[0.75rem] uppercase tracking-wider hover:text-orange-700 transition-colors duration-300" href="#">About</a>
+<a class="text-orange-900 dark:text-orange-100 border-b-2 border-orange-800/30 pb-1 font-label text-[0.75rem] uppercase tracking-wider" href="#">Blog</a>
+</div>
+<button class="bg-primary text-on-primary px-8 py-3 rounded-xl font-label text-[0.75rem] uppercase tracking-widest hover:bg-primary-container transition-all duration-300 active:scale-95">
+                Contact Us
+            </button>
+</nav>
+</header>
+<main class="pt-24">
+<!-- Hero Section: Featured Article -->
+<section class="relative h-[870px] w-full overflow-hidden flex items-end">
+<img alt="Desert Caravan" class="absolute inset-0 w-full h-full object-cover brightness-75 scale-105" data-alt="Cinematic wide shot of a traditional camel caravan crossing rolling orange sand dunes at sunset with long shadows and warm hazy light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAYtuq_DT3qTuznt8n0yuNK_M8USY-G7H2byFwBZPdY_dxlWvwgpdeyekUhb1eBNvGR5tXB1nR3gaD485I7uPoOq1Se0G57hPWGLGPPy6UfvinO4Msqahv8Ov0jJq6bx4PtZFFolXkQmO-gmYptjCMwuzkWb4YffK1IvGSf7LJ-07ipGDPnBA_EpsQwehqs8qse3HrjnlxOLNuXHwSfdBB9DSUgvznVhSlRCuWRMb9eg9wzPhfxC0scqYR8VZoYtOI8vDPCxEbfOk0"/>
+<div class="relative z-10 w-full max-w-screen-2xl mx-auto px-12 pb-24">
+<div class="max-w-3xl bg-surface/90 backdrop-blur-md p-12 md:p-16 rounded-xl shadow-2xl">
+<span class="font-label text-[0.75rem] uppercase tracking-[0.2em] text-primary mb-4 block">Featured Journal</span>
+<h1 class="font-headline text-[3.5rem] leading-[1.1] text-on-surface mb-8">The Silent Wisdom of the Atlas Peaks</h1>
+<p class="font-body text-lg text-on-surface-variant leading-relaxed mb-10 max-w-xl">
+                        Venture beyond the bustling souks into the high altitudes where time slows to the rhythm of mountain winds and ancient shepherd rituals.
+                    </p>
+<a class="inline-flex items-center gap-3 text-on-surface font-label text-[0.75rem] uppercase tracking-widest group" href="#">
+                        Read the Journal
+                        <span class="material-symbols-outlined text-primary group-hover:translate-x-2 transition-transform">arrow_right_alt</span>
+</a>
+</div>
+</div>
+</section>
+<!-- Journal Categories & Filter -->
+<section class="bg-surface-container-low py-12">
+<div class="max-w-screen-2xl mx-auto px-12 flex flex-col md:flex-row justify-between items-baseline gap-8">
+<div class="flex gap-12 overflow-x-auto pb-4 md:pb-0 scrollbar-hide">
+<button class="font-label text-[0.75rem] uppercase tracking-[0.15em] text-primary font-bold border-b-2 border-primary pb-1">All Stories</button>
+<button class="font-label text-[0.75rem] uppercase tracking-[0.15em] text-on-surface-variant hover:text-primary transition-colors">Traveler's Guide</button>
+<button class="font-label text-[0.75rem] uppercase tracking-[0.15em] text-on-surface-variant hover:text-primary transition-colors">Culture &amp; Ritual</button>
+<button class="font-label text-[0.75rem] uppercase tracking-[0.15em] text-on-surface-variant hover:text-primary transition-colors">Hidden Gems</button>
+</div>
+<div class="flex items-center gap-4 text-on-surface-variant">
+<span class="font-label text-[0.75rem] uppercase tracking-widest">Search</span>
+<div class="w-48 border-b border-outline-variant h-8 flex items-center">
+<span class="material-symbols-outlined text-sm opacity-50">search</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Article Grid -->
+<section class="max-w-screen-2xl mx-auto px-12 py-32">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-16 items-start">
+<!-- Card 1: Traveler's Guide (Wide) -->
+<article class="md:col-span-7 flex flex-col gap-8 group">
+<div class="aspect-[16/9] overflow-hidden rounded-xl bg-surface-container-highest">
+<img alt="Marrakech Courtyard" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Interior courtyard of a luxury Moroccan riad with intricate zellige tiles, a central fountain, and lush green potted palms in soft daylight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0u66wV42Z2KX7fes1HTmN9EKwMPCeK5y0IP84LKc-kcbx9D5q3kdj9PRqsnu7CHYPWuIUS7xaWkep40LjBYZIx5VP9vZD-lnf2Ig7lEzDl6P9LJrTvjStRKIAmoc-CodfL7mWN0iSR4L3XwHBczBgZzz6JPx7NlX9Hmb3d76XseKxIRqQMxCUzcybehCQ0EYPYWz73JlxCigTuw5kI7d8-7kGcOkiq-hRhI13GDXMlF5KW35Pvq1qhLlOXXVKzl9q2BZDUuAc2AY"/>
+</div>
+<div class="max-w-2xl">
+<span class="font-label text-[0.75rem] uppercase tracking-widest text-secondary mb-4 block">Traveler's Guide</span>
+<h2 class="font-headline text-[2.5rem] leading-tight text-on-surface mb-6 group-hover:text-primary transition-colors">Navigating the Red City: A Modern Nomad's Protocol</h2>
+<p class="font-body text-lg text-on-surface-variant leading-relaxed">From secret rooftop terraces to the most skilled leather artisans, discover the contemporary pulse of Marrakech through the eyes of those who call it home.</p>
+</div>
+</article>
+<!-- Card 2: Culture & Ritual (Tall) -->
+<article class="md:col-span-5 flex flex-col gap-8 group asymmetric-offset">
+<div class="aspect-[4/5] overflow-hidden rounded-xl bg-surface-container-highest">
+<img alt="Traditional Tea Ceremony" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Close-up of traditional Moroccan mint tea being poured from a silver teapot into an ornate glass with fresh mint leaves and steam rising in soft morning light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDuRbB8YNv1K7dkdfbcLDrHj9kxDjwEkz0oQVmjxJGCurNnLZZJn8K1DwH3vMxFLMZ1q04Ffu7FoQ5mKKEdBy9MwP_4bxF8KseRA0CCTD56aAnBY-8oSPrvW76K1lLf5GROMPNhvb-3yDpNnrps97Fcl1v-CMwkFy6Q3j5RtF020YKEWWDT7IsrvcX_mUJD9YtDjQH9zrYZjXwjX_l8J6p6cuynNle4i9VIZDcuMi-linHa_N8wEP9GR7f1IfguioiM2d3H0dEIla4"/>
+</div>
+<div>
+<span class="font-label text-[0.75rem] uppercase tracking-widest text-tertiary mb-4 block">Culture &amp; Ritual</span>
+<h3 class="font-headline text-[1.75rem] leading-tight text-on-surface mb-4 group-hover:text-primary transition-colors">The Alchemy of Mint: More Than Just Tea</h3>
+<p class="font-body text-on-surface-variant leading-relaxed">Understanding the deep social fabric woven into the Moroccan tea ceremony, a symbol of hospitality and timeless friendship.</p>
+</div>
+</article>
+<!-- Card 3: Hidden Gems -->
+<article class="md:col-span-4 flex flex-col gap-8 group">
+<div class="aspect-[4/5] overflow-hidden rounded-xl bg-surface-container-highest">
+<img alt="Blue Street of Chefchaouen" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Quiet narrow cobblestone street in Chefchaouen with walls painted in various shades of vibrant blue and colorful flower pots hanging from white balconies" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBAX9OmSWOPH8mSzV09l1fI9GdpuWUBiRNIm5YefJ3kLmGyZ5_D66A4VBusUiH-bY1hOiiEjR7HFiDQqJQ1uEpdkmhOiby_tZQsVTkEmpP9Q2dAM_H3xsxkza_ckwScZHyWKWX0Lc_CGJroVefNYv4s_o0YUDOiGbrI4y9YFtlZhBcnYUCJQGptJzTOcUzRmPDsM8Trp7DSlaWdeAViqIzkm1TA1ny9weyLkH2E3PADU4U6rqYLj0AIK5R3_-Pxp7oJQblS5DBM0CU"/>
+</div>
+<div>
+<span class="font-label text-[0.75rem] uppercase tracking-widest text-primary mb-4 block">Hidden Gems</span>
+<h3 class="font-headline text-[1.75rem] leading-tight text-on-surface mb-4 group-hover:text-primary transition-colors">The Indigo Labyrinth: Beyond the Blue Walls</h3>
+<p class="font-body text-on-surface-variant leading-relaxed">Escaping the main tourist trail in Chefchaouen to find the quietest alleys and the stories they hold.</p>
+</div>
+</article>
+<!-- Card 4: Interior Design -->
+<article class="md:col-span-8 flex flex-col md:flex-row gap-12 group items-center">
+<div class="w-full md:w-1/2 aspect-square overflow-hidden rounded-xl bg-surface-container-highest">
+<img alt="Luxury Tent Decor" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Interior of a luxury desert glamping tent with artisanal hand-woven rugs, brass lanterns casting intricate shadows, and plush floor cushions in earth tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB6EghbnoI1c4FaAOe5GmJtKctDIjBhJFa2Vng6xbahTMbJx5WEa5boHOwklG3pXGMvuzVHzDiTn4WhLv349eIE_6KO0ejXfGAN2czBg5hesYb7uhe7hKxwo9SHe4yPG90cdNK_koFL_pgh76mPpBoMZmMS84iFAiJEGUpHEAlgeHFjXcoHfNZhz8pYx00Q4-Lu4SSqzYL8erboLtBFeN2FHVMrBd4vlzGt95Kfko4VJNG-h-weoxDMD-FbtADsihqsUuI8a-piGG4"/>
+</div>
+<div class="w-full md:w-1/2">
+<span class="font-label text-[0.75rem] uppercase tracking-widest text-secondary mb-4 block">Modern Design</span>
+<h3 class="font-headline text-[2rem] leading-tight text-on-surface mb-6 group-hover:text-primary transition-colors">Woven Heritage: The Art of the Berber Rug</h3>
+<p class="font-body text-lg text-on-surface-variant leading-relaxed mb-8">Decoding the geometric symbols and tribal history embedded within each hand-knotted masterpiece of the Atlas Mountains.</p>
+<a class="font-label text-[0.75rem] uppercase tracking-widest border-b border-primary/40 pb-1 hover:border-primary transition-all" href="#">Continue Reading</a>
+</div>
+</article>
+</div>
+</section>
+<!-- Newsletter: Join the Inner Circle -->
+<section class="bg-surface-container-high mx-12 rounded-xl py-24 mb-32 overflow-hidden relative">
+<div class="absolute top-0 right-0 w-1/3 h-full opacity-10 pointer-events-none">
+<span class="material-symbols-outlined text-[20rem] absolute -right-20 -top-10 rotate-12">mail</span>
+</div>
+<div class="max-w-3xl mx-auto text-center px-6 relative z-10">
+<span class="font-label text-[0.75rem] uppercase tracking-[0.3em] text-primary mb-6 block">Dispatch from the Dunes</span>
+<h2 class="font-headline text-[3rem] text-on-surface mb-8">Join the Inner Circle</h2>
+<p class="font-body text-lg text-on-surface-variant mb-12">Subscribe to receive curated travel narratives, exclusive destination previews, and cultural insights delivered once a month.</p>
+<form class="flex flex-col md:flex-row gap-4 items-end">
+<div class="flex-grow w-full">
+<label class="font-label text-[0.65rem] uppercase tracking-widest text-on-surface-variant mb-2 block text-left" for="email">Email Address</label>
+<input class="w-full bg-transparent border-b border-outline-variant py-3 focus:outline-none focus:border-primary transition-colors font-body text-on-surface" id="email" placeholder="nomad@exploration.com" type="email"/>
+</div>
+<button class="bg-primary text-on-primary px-12 py-4 rounded-xl font-label text-[0.75rem] uppercase tracking-[0.2em] hover:bg-primary-container transition-all active:scale-95 w-full md:w-auto" type="submit">
+                        Join Now
+                    </button>
+</form>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full mt-24 bg-stone-100 dark:bg-stone-950">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-12 py-20 max-w-screen-2xl mx-auto">
+<div class="md:col-span-1">
+<span class="text-3xl font-serif text-orange-900 dark:text-orange-100 font-headline mb-6 block">Sahara Mirage</span>
+<p class="font-body text-stone-500 text-sm leading-relaxed">© 2024 Sahara Mirage. Curated Journeys for the Modern Nomad.</p>
+</div>
+<div>
+<h4 class="font-label text-[0.75rem] uppercase tracking-widest text-orange-800 dark:text-orange-300 font-bold mb-6">Explore</h4>
+<ul class="space-y-4">
+<li><a class="text-stone-500 font-body text-sm hover:translate-x-1 transition-transform duration-200 block" href="#">Tours</a></li>
+<li><a class="text-stone-500 font-body text-sm hover:translate-x-1 transition-transform duration-200 block" href="#">Destinations</a></li>
+<li><a class="text-stone-500 font-body text-sm hover:translate-x-1 transition-transform duration-200 block" href="#">Blog</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label text-[0.75rem] uppercase tracking-widest text-orange-800 dark:text-orange-300 font-bold mb-6">Ethos</h4>
+<ul class="space-y-4">
+<li><a class="text-stone-500 font-body text-sm hover:translate-x-1 transition-transform duration-200 block" href="#">Privacy Policy</a></li>
+<li><a class="text-stone-500 font-body text-sm hover:translate-x-1 transition-transform duration-200 block" href="#">Terms of Service</a></li>
+<li><a class="text-stone-500 font-body text-sm hover:translate-x-1 transition-transform duration-200 block" href="#">Sustainability Pledge</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label text-[0.75rem] uppercase tracking-widest text-orange-800 dark:text-orange-300 font-bold mb-6">Concierge</h4>
+<p class="text-stone-500 font-body text-sm mb-6">Need assistance planning your escape? Our travel designers are here for you.</p>
+<div class="flex gap-4">
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">forum</span>
+</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">alternate_email</span>
+</a>
+</div>
+</div>
+</div>
+</footer>
+<!-- WhatsApp Floating Action Button (Concierge) -->
+<a class="fixed bottom-8 right-8 bg-[#25D366] text-white p-4 rounded-full shadow-xl hover:scale-110 transition-transform active:scale-95 z-50 flex items-center justify-center" href="#">
+<span class="material-symbols-outlined text-[32px]" style="font-variation-settings: 'FILL' 1;">chat</span>
+</a>
+</body></html>

@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Manrope:wght@300;400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary-container": "#7b745e",
+                        "on-surface-variant": "#56423d",
+                        "surface": "#fbf9f8",
+                        "on-tertiary-container": "#fffbff",
+                        "secondary-container": "#cfe99f",
+                        "on-secondary-fixed": "#131f00",
+                        "surface-variant": "#e4e2e1",
+                        "inverse-primary": "#ffb5a0",
+                        "background": "#fbf9f8",
+                        "on-background": "#1b1c1c",
+                        "surface-dim": "#dcd9d9",
+                        "surface-container-low": "#f6f3f2",
+                        "outline": "#89726c",
+                        "on-secondary-container": "#546a2e",
+                        "secondary": "#50652a",
+                        "on-primary-fixed-variant": "#7d2c13",
+                        "on-error-container": "#93000a",
+                        "error-container": "#ffdad6",
+                        "secondary-fixed": "#d2eca2",
+                        "primary-fixed-dim": "#ffb5a0",
+                        "on-error": "#ffffff",
+                        "surface-tint": "#9c4328",
+                        "on-primary": "#ffffff",
+                        "surface-container-high": "#eae8e7",
+                        "on-tertiary-fixed-variant": "#4c4733",
+                        "tertiary": "#615c47",
+                        "primary-fixed": "#ffdbd1",
+                        "on-tertiary-fixed": "#1f1c0b",
+                        "primary": "#994126",
+                        "tertiary-fixed-dim": "#cec6ad",
+                        "surface-bright": "#fbf9f8",
+                        "primary-container": "#b8583c",
+                        "error": "#ba1a1a",
+                        "on-surface": "#1b1c1c",
+                        "secondary-fixed-dim": "#b6d088",
+                        "on-primary-container": "#fffbff",
+                        "surface-container-highest": "#e4e2e1",
+                        "tertiary-fixed": "#ebe2c8",
+                        "surface-container": "#f0eded",
+                        "on-primary-fixed": "#3b0a00",
+                        "inverse-on-surface": "#f3f0f0",
+                        "on-tertiary": "#ffffff",
+                        "outline-variant": "#dcc1b9",
+                        "surface-container-lowest": "#ffffff",
+                        "on-secondary": "#ffffff",
+                        "inverse-surface": "#303030",
+                        "on-secondary-fixed-variant": "#394d14"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Noto Serif"],
+                        "body": ["Manrope"],
+                        "label": ["Manrope"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .editorial-overlap {
+            margin-top: -100px;
+        }
+        .glass-nav {
+            backdrop-filter: blur(12px);
+        }
+        input:focus, textarea:focus, select:focus {
+            outline: none !important;
+            border-bottom-width: 2px !important;
+            border-color: #994126 !important;
+            box-shadow: none !important;
+        }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface">
+<!-- TopAppBar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/80 dark:bg-stone-900/80 backdrop-blur-md">
+<div class="flex justify-between items-center px-12 py-6 max-w-screen-2xl mx-auto">
+<a class="text-2xl font-serif text-orange-900 dark:text-orange-100 italic" href="#">Sahara Mirage</a>
+<div class="hidden md:flex gap-8 items-center">
+<a class="text-stone-600 dark:text-stone-400 font-label text-[0.75rem] uppercase tracking-wider hover:text-orange-700 transition-colors duration-300" href="#">Tours</a>
+<a class="text-stone-600 dark:text-stone-400 font-label text-[0.75rem] uppercase tracking-wider hover:text-orange-700 transition-colors duration-300" href="#">Destinations</a>
+<a class="text-orange-900 dark:text-orange-100 border-b-2 border-orange-800/30 pb-1 font-label text-[0.75rem] uppercase tracking-wider" href="#">Custom Trip</a>
+<a class="text-stone-600 dark:text-stone-400 font-label text-[0.75rem] uppercase tracking-wider hover:text-orange-700 transition-colors duration-300" href="#">About</a>
+<a class="text-stone-600 dark:text-stone-400 font-label text-[0.75rem] uppercase tracking-wider hover:text-orange-700 transition-colors duration-300" href="#">Blog</a>
+</div>
+<button class="bg-primary text-on-primary px-6 py-2.5 rounded-xl font-label text-[0.75rem] uppercase tracking-widest hover:bg-primary-container transition-all">
+                Contact Us
+            </button>
+</div>
+</nav>
+<!-- Hero Section -->
+<header class="relative h-[921px] flex items-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover grayscale-[0.2] brightness-75" data-alt="Cinematic sweeping view of Moroccan sand dunes at sunset with soft orange light and long deep shadows across the ridges" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBe-d2l9k2418Xgkq9NiJSs9cGEiUdDA0yc74IL1MrIKv0UvNfwY75Zs3f6j4rcfQdA0ILna8gCw0OvxHyJybi_F3Z-7lJhQSIfE6YdfjueUO51pME77iV6PBFrU3Eu6dFs5ajPzg2r0kBjupFnes4HI9vwl-gB7f_b3SVP60IfhMxukbzNKKZKI2NF6C5MjZqTt_CFSBz83QfFolwP_9twZK8CZdU0F2JSxxKE67t2aQnPfvgHc0hD-4HiJVwOJ6uwSitEAYKR3d4"/>
+</div>
+<div class="relative z-10 px-12 max-w-screen-2xl mx-auto w-full">
+<div class="max-w-3xl">
+<span class="inline-block font-label text-white text-[0.75rem] uppercase tracking-[0.3em] mb-6">Bespoke Experiences</span>
+<h1 class="font-headline text-[3.5rem] leading-tight text-white mb-8">Your Journey,<br/>Handcrafted.</h1>
+<p class="text-white/90 text-xl font-light leading-relaxed mb-12 max-w-xl">
+                    Escape the predictable. We curate private, luxury expeditions through Morocco tailored precisely to your rhythm, interests, and curiosity.
+                </p>
+<a class="bg-surface text-primary px-8 py-4 rounded-xl font-label text-[0.75rem] uppercase tracking-widest hover:bg-surface-container-high transition-all" href="#inquiry">
+                    Begin Your Design
+                </a>
+</div>
+</div>
+</header>
+<!-- Trust Section (Asymmetric) -->
+<section class="py-24 px-12 max-w-screen-2xl mx-auto bg-surface">
+<div class="grid grid-cols-12 gap-12 items-center">
+<div class="col-span-12 md:col-span-5 editorial-overlap bg-surface-container-lowest p-12 z-20 shadow-[0_20px_40px_rgba(86,66,61,0.06)]">
+<span class="font-label text-primary text-[0.75rem] uppercase tracking-widest mb-4 block">Our Philosophy</span>
+<h2 class="font-headline text-[1.75rem] text-on-surface-variant mb-6">Why Custom With Us?</h2>
+<div class="space-y-8">
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-primary">verified_user</span>
+<div>
+<h4 class="font-bold text-on-surface mb-1">Local Intimacy</h4>
+<p class="text-on-surface-variant/80 text-sm">Direct connections with master artisans and hidden riads that aren't on any public map.</p>
+</div>
+</div>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-primary">auto_awesome</span>
+<div>
+<h4 class="font-bold text-on-surface mb-1">Unrivaled Expertise</h4>
+<p class="text-on-surface-variant/80 text-sm">Over 15 years of curating high-end nomadic experiences for discerning global travelers.</p>
+</div>
+</div>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-primary">support_agent</span>
+<div>
+<h4 class="font-bold text-on-surface mb-1">24/7 Concierge</h4>
+<p class="text-on-surface-variant/80 text-sm">A dedicated journey manager available around the clock from arrival to departure.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="col-span-12 md:col-span-7">
+<img class="w-full h-[600px] object-cover" data-alt="Editorial portrait of a luxury tent interior in the desert with fine Moroccan textiles and warm lantern light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-twB2dc51NYQKqhcDUosMwJGipOHYRLg20ceLqjpHWmipbAEF5d2ninp7FsobpRLHXbverYYuHxesOf0LHwYNsLPofjsFAn2QkhF3VEY2005n6vmkPhrY_GemAug1QIpTe_1OAtON9h_XtxiIDYA_8EEUrZG8-_-6wVVuLZMyRLam-GvglS-6brJi7A_YpK_G2tA8RH-KT9Wtp8wAnse_JENHTr63f5xGIHS0tZfK0qtTN6BWC0OS0ubJyjAxE51vW_dvODfu7EA"/>
+</div>
+</div>
+</section>
+<!-- The Process Section (Editorial Grid) -->
+<section class="py-24 bg-surface-container-low">
+<div class="px-12 max-col-screen-2xl mx-auto">
+<div class="text-center mb-20">
+<h2 class="font-headline text-[2.5rem] text-on-surface mb-4 italic">The Path to Sahara</h2>
+<p class="font-label text-on-surface-variant text-[0.75rem] uppercase tracking-widest">How we craft your narrative</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-0 border-t border-outline-variant/30">
+<div class="p-12 border-b md:border-b-0 md:border-r border-outline-variant/30 group hover:bg-surface-container transition-colors duration-500">
+<span class="font-headline text-5xl text-outline-variant/40 mb-8 block">01</span>
+<span class="material-symbols-outlined text-3xl text-primary mb-6">forum</span>
+<h3 class="font-headline text-xl mb-4">Consultation</h3>
+<p class="text-on-surface-variant/70 leading-relaxed text-sm">An in-depth conversation to understand your tastes, pace, and passions.</p>
+</div>
+<div class="p-12 border-b md:border-b-0 md:border-r border-outline-variant/30 group hover:bg-surface-container transition-colors duration-500">
+<span class="font-headline text-5xl text-outline-variant/40 mb-8 block">02</span>
+<span class="material-symbols-outlined text-3xl text-primary mb-6">edit_note</span>
+<h3 class="font-headline text-xl mb-4">Design</h3>
+<p class="text-on-surface-variant/70 leading-relaxed text-sm">We draft a primary itinerary blending iconic landmarks with secret gems.</p>
+</div>
+<div class="p-12 border-b md:border-b-0 md:border-r border-outline-variant/30 group hover:bg-surface-container transition-colors duration-500">
+<span class="font-headline text-5xl text-outline-variant/40 mb-8 block">03</span>
+<span class="material-symbols-outlined text-3xl text-primary mb-6">tune</span>
+<h3 class="font-headline text-xl mb-4">Refinement</h3>
+<p class="text-on-surface-variant/70 leading-relaxed text-sm">Fine-tuning every transfer, meal preference, and private guide until perfect.</p>
+</div>
+<div class="p-12 group hover:bg-surface-container transition-colors duration-500">
+<span class="font-headline text-5xl text-outline-variant/40 mb-8 block">04</span>
+<span class="material-symbols-outlined text-3xl text-primary mb-6">explore</span>
+<h3 class="font-headline text-xl mb-4">Adventure</h3>
+<p class="text-on-surface-variant/70 leading-relaxed text-sm">Your journey begins with every detail managed by our on-ground team.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Inquiry Form Section -->
+<section class="py-24 px-12 max-w-screen-2xl mx-auto" id="inquiry">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-20">
+<div>
+<h2 class="font-headline text-[3rem] text-on-surface leading-tight mb-8">Start Your <br/><span class="italic text-primary">Inquiry</span></h2>
+<p class="text-on-surface-variant text-lg font-light leading-relaxed mb-12">
+                    Share your vision with us. Our designers will review your details and reach out within 24 hours to begin the consultation.
+                </p>
+<div class="bg-surface-container-high p-8 rounded-xl">
+<h4 class="font-bold mb-4">Urgent Planning?</h4>
+<p class="text-sm text-on-surface-variant mb-6">If you are traveling within the next 14 days, we recommend reaching out via WhatsApp for immediate assistance.</p>
+<a class="inline-flex items-center gap-3 bg-[#25D366] text-white px-8 py-4 rounded-xl font-label text-[0.75rem] uppercase tracking-widest hover:opacity-90 transition-all" href="#">
+<span class="material-symbols-outlined">chat</span>
+                        WhatsApp Concierge
+                    </a>
+</div>
+</div>
+<div class="bg-surface-container-low p-12 rounded-xl">
+<form class="space-y-8">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="flex flex-col">
+<label class="font-label text-[0.65rem] uppercase tracking-widest text-on-surface-variant mb-2">Full Name</label>
+<input class="bg-transparent border-0 border-b border-outline-variant py-2 px-0 text-on-surface focus:border-primary placeholder:text-stone-300" placeholder="E.g. Elena Vance" type="text"/>
+</div>
+<div class="flex flex-col">
+<label class="font-label text-[0.65rem] uppercase tracking-widest text-on-surface-variant mb-2">Email Address</label>
+<input class="bg-transparent border-0 border-b border-outline-variant py-2 px-0 text-on-surface focus:border-primary placeholder:text-stone-300" placeholder="elena@example.com" type="email"/>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="flex flex-col">
+<label class="font-label text-[0.65rem] uppercase tracking-widest text-on-surface-variant mb-2">Estimated Dates</label>
+<input class="bg-transparent border-0 border-b border-outline-variant py-2 px-0 text-on-surface focus:border-primary placeholder:text-stone-300" placeholder="Oct 2024 - Nov 2024" type="text"/>
+</div>
+<div class="flex flex-col">
+<label class="font-label text-[0.65rem] uppercase tracking-widest text-on-surface-variant mb-2">Travelers</label>
+<select class="bg-transparent border-0 border-b border-outline-variant py-2 px-0 text-on-surface focus:border-primary appearance-none">
+<option>Solo Traveler</option>
+<option>Couple</option>
+<option>Family (3-5)</option>
+<option>Small Group (6+)</option>
+</select>
+</div>
+</div>
+<div class="flex flex-col">
+<label class="font-label text-[0.65rem] uppercase tracking-widest text-on-surface-variant mb-2">Estimated Budget (Per Person)</label>
+<div class="grid grid-cols-3 gap-4 pt-4">
+<label class="cursor-pointer">
+<input class="hidden peer" name="budget" type="radio"/>
+<div class="text-center py-3 border border-outline-variant rounded-lg peer-checked:bg-primary peer-checked:text-white peer-checked:border-primary transition-all text-sm">$3k - $5k</div>
+</label>
+<label class="cursor-pointer">
+<input checked="" class="hidden peer" name="budget" type="radio"/>
+<div class="text-center py-3 border border-outline-variant rounded-lg peer-checked:bg-primary peer-checked:text-white peer-checked:border-primary transition-all text-sm">$5k - $10k</div>
+</label>
+<label class="cursor-pointer">
+<input class="hidden peer" name="budget" type="radio"/>
+<div class="text-center py-3 border border-outline-variant rounded-lg peer-checked:bg-primary peer-checked:text-white peer-checked:border-primary transition-all text-sm">$10k+</div>
+</label>
+</div>
+</div>
+<div class="flex flex-col">
+<label class="font-label text-[0.65rem] uppercase tracking-widest text-on-surface-variant mb-2">Tell us about your dream trip</label>
+<textarea class="bg-transparent border-0 border-b border-outline-variant py-2 px-0 text-on-surface focus:border-primary placeholder:text-stone-300 resize-none" placeholder="Interests, special occasions, or preferred regions..." rows="4"></textarea>
+</div>
+<button class="w-full bg-primary text-on-primary py-5 rounded-xl font-label text-[0.75rem] uppercase tracking-[0.2em] hover:bg-primary-container transition-all shadow-lg" type="submit">
+                        Submit Inquiry
+                    </button>
+</form>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-stone-100 dark:bg-stone-950 w-full mt-24">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-12 py-20 max-w-screen-2xl mx-auto">
+<div class="col-span-1 md:col-span-1">
+<h3 class="text-3xl font-serif text-orange-900 dark:text-orange-100 mb-6">Sahara Mirage</h3>
+<p class="text-stone-500 dark:text-stone-400 font-body text-lg leading-relaxed">
+                    © 2024 Sahara Mirage. Curated Journeys for the Modern Nomad.
+                </p>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-label text-[0.75rem] uppercase text-orange-900 dark:text-orange-200 tracking-widest mb-2">Explore</h4>
+<a class="text-stone-500 dark:text-stone-400 hover:translate-x-1 transition-transform duration-200" href="#">Destinations</a>
+<a class="text-stone-500 dark:text-stone-400 hover:translate-x-1 transition-transform duration-200" href="#">Luxury Tents</a>
+<a class="text-stone-500 dark:text-stone-400 hover:translate-x-1 transition-transform duration-200" href="#">Cultural Guides</a>
+<a class="text-stone-500 dark:text-stone-400 hover:translate-x-1 transition-transform duration-200" href="#">Testimonials</a>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-label text-[0.75rem] uppercase text-orange-900 dark:text-orange-200 tracking-widest mb-2">Legal</h4>
+<a class="text-stone-500 dark:text-stone-400 hover:translate-x-1 transition-transform duration-200" href="#">Privacy Policy</a>
+<a class="text-stone-500 dark:text-stone-400 hover:translate-x-1 transition-transform duration-200" href="#">Terms of Service</a>
+<a class="text-stone-500 dark:text-stone-400 hover:translate-x-1 transition-transform duration-200" href="#">Travel Insurance</a>
+<a class="text-stone-500 dark:text-stone-400 hover:translate-x-1 transition-transform duration-200" href="#">Sustainability Pledge</a>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-label text-[0.75rem] uppercase text-orange-900 dark:text-orange-200 tracking-widest mb-2">Follow</h4>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-primary hover:scale-95 duration-150" href="#">
+<span class="material-symbols-outlined">public</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-primary hover:scale-95 duration-150" href="#">
+<span class="material-symbols-outlined">camera_enhance</span>
+</a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>
